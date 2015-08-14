@@ -13,7 +13,7 @@
 
 # Huginn
 
-<img src="https://raw.github.com/cantino/huginn/master/media/huginn-logo.png" alt="app img" width="150" />
+<img src="https://raw.github.com/cantino/huginn/master/media/huginn-logo.png" alt="app img" width="200" />
 
 Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn's Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.
 
@@ -31,7 +31,7 @@ azk start saitodisse/huginn#azkfile
 
 # Isomorphic500
 
-<a href="https://isomorphic500.herokuapp.com"><img src="https://cloud.githubusercontent.com/assets/120693/7737327/95f3de1c-ff4a-11e4-86fb-e9d3cabcdedb.png" width="150"></a>
+<a href="https://isomorphic500.herokuapp.com"><img src="https://cloud.githubusercontent.com/assets/120693/7737327/95f3de1c-ff4a-11e4-86fb-e9d3cabcdedb.png" width="200"></a>
 
 [Isomorphic500](https://isomorphic500.herokuapp.com) is a small isomorphic ([universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9)) web application featuring photos from [500px](http://500px.com).
 
@@ -51,7 +51,7 @@ azk start saitodisse/isomorphic500#azkfile
 
 # Discourse
 
-<img src="http://www.discourse.org/images/readme/newrelic-1-3-beta.png" alt="app img" width="150" />
+<img src="http://www.discourse.org/images/readme/newrelic-1-3-beta.png" alt="app img" width="200" />
 
 Discourse is the 100% open source discussion platform built for the next decade of the Internet. It works as: a mailing list, a discussion forum or a long-form chat room;
 
@@ -70,7 +70,7 @@ azk start saitodisse/discourse#feature/azkfile
 
 # Task Cerebral
 
-<img src="https://github.com/saitodisse/task-cerebral/raw/master/github_assets/gliffy%20diagram.png" alt="app img" width="150" />
+<img src="https://github.com/saitodisse/task-cerebral/raw/master/github_assets/gliffy%20diagram.png" alt="app img" width="200" />
 
 Simples list example using [cerebral controller](https://github.com/christianalfoni/cerebral)
 
@@ -78,6 +78,7 @@ Simples list example using [cerebral controller](https://github.com/christianalf
 - production ready version on dist folder
 - exposes everything (app, DB) with ngrok
 
+- [github](https://github.com/saitodisse/task-cerebral)
 
 ```sh
 azk start saitodisse/task-cerebral
@@ -91,7 +92,7 @@ azk start saitodisse/task-cerebral
 
 # Feedbin
 
-<img src="https://raw.github.com/feedbin/feedbin/master/app/assets/images/screenshots/_main.png" alt="app img" width="150" />
+<img src="https://raw.github.com/feedbin/feedbin/master/app/assets/images/screenshots/_main.png" alt="app img" width="200" />
 
 Feedbin is a simple, fast and nice looking RSS reader.
 
