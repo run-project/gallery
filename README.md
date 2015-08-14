@@ -1,4 +1,4 @@
-# Galery
+# Gallery - azk buttons
 
 <!-- MarkdownTOC -->
 
