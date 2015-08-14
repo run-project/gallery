@@ -2,7 +2,7 @@
 
 <!-- MarkdownTOC -->
 
-- Huginn
+- [Huginn](#Huginn)
 
 <!-- /MarkdownTOC -->
 
