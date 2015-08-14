@@ -10,7 +10,6 @@
 
 <!-- /MarkdownTOC -->
 
-
 ### [Huginn](https://github.com/saitodisse/huginn/tree/azk-prod)
 
 <img src="https://raw.github.com/cantino/huginn/master/media/huginn-logo.png" alt="app img" width="200" />
@@ -18,11 +17,8 @@
 Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn's Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.
 
 ```sh
-azk start saitodisse/huginn#azkfile
+azk start -o saitodisse/huginn#azkfile
 ```
-
-- http://huginn.dev.azk.io/
-
 
 ----------------------
 
@@ -34,11 +30,8 @@ azk start saitodisse/huginn#azkfile
 [Isomorphic500](https://isomorphic500.herokuapp.com) is a small isomorphic ([universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9)) web application featuring photos from [500px](http://500px.com). It is built on [express](http://expressjs.com) using [React](https://facebook.github.io/react) and [Flux](https://facebook.github.io/flux) with [yahoo/fluxible](http://fluxible.io). It is developed with [webpack](http://webpack.github.io) and [react-hot-loader](http://gaearon.github.io/react-hot-loader/) and written with [babeljs](http://babeljs.io) with the help of [eslint](http://eslint.org). It supports multiple languages using [react-intl](http://formatjs.io/react/).
 
 ```sh
-azk start saitodisse/isomorphic500#azkfile
+azk start -o saitodisse/isomorphic500#azkfile
 ```
-
-- http://isomorphic500.dev.azk.io/
-
 
 ----------------------
 
@@ -50,11 +43,8 @@ azk start saitodisse/isomorphic500#azkfile
 Discourse is the 100% open source discussion platform built for the next decade of the Internet. It works as: a mailing list, a discussion forum or a long-form chat room;
 
 ```sh
-azk start saitodisse/discourse#feature/azkfile
+azk start -o saitodisse/discourse#feature/azkfile
 ```
-
-- http://discourse.dev.azk.io/
-
 
 
 ----------------------
@@ -67,11 +57,8 @@ azk start saitodisse/discourse#feature/azkfile
 Simples list example using [cerebral controller](https://github.com/christianalfoni/[cerebral)](https://github.com/saitodisse/task-cerebral). webpack/hot/dev-server enabled; production ready version on dist folder; exposes everything (app, DB) with ngrok;
 
 ```sh
-azk start saitodisse/task-cerebral
+azk start -o saitodisse/task-cerebral
 ```
-
-- http://task-cerebral.dev.azk.io/
-
 
 ----------------------
 
@@ -83,11 +70,8 @@ azk start saitodisse/task-cerebral
 Feedbin is a simple, fast and nice looking RSS reader.
 
 ```sh
-azk start azukiapp/feedbin
+azk start -o azukiapp/feedbin
 ```
-
-- http://feedbin.dev.azk.io/
-
 
 
 
