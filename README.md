@@ -10,6 +10,9 @@
 
 <!-- /MarkdownTOC -->
 
+
+----------------------
+
 ### [Huginn](https://github.com/saitodisse/huginn/tree/azk-prod)
 
 <img src="https://raw.github.com/cantino/huginn/master/media/huginn-logo.png" alt="app img" width="200" />
@@ -20,8 +23,8 @@ Huginn is a system for building agents that perform automated tasks for you onli
 azk start -o saitodisse/huginn#azkfile
 ```
 
-----------------------
 
+----------------------
 
 ### [Isomorphic500](https://github.com/saitodisse/isomorphic500/tree/azkfile)
 
@@ -33,8 +36,8 @@ azk start -o saitodisse/huginn#azkfile
 azk start -o saitodisse/isomorphic500#azkfile
 ```
 
-----------------------
 
+----------------------
 
 ### [Discourse](https://github.com/saitodisse/discourse/tree/feature/azkfile)
 
@@ -49,19 +52,18 @@ azk start -o saitodisse/discourse#feature/azkfile
 
 ----------------------
 
-
-### Task Cerebral
+### [Task Cerebral](https://github.com/saitodisse/task-cerebral)
 
 <img src="https://github.com/saitodisse/task-cerebral/raw/master/github_assets/gliffy%20diagram.png" alt="app img" width="200" />
 
-Simples list example using [cerebral controller](https://github.com/christianalfoni/[cerebral)](https://github.com/saitodisse/task-cerebral). webpack/hot/dev-server enabled; production ready version on dist folder; exposes everything (app, DB) with ngrok;
+Simples list example using [cerebral controller](https://github.com/christianalfoni/cerebral). webpack/hot/dev-server enabled; production ready version on dist folder; exposes everything (app, DB) with ngrok;
 
 ```sh
 azk start -o saitodisse/task-cerebral
 ```
 
-----------------------
 
+----------------------
 
 ### [Feedbin](https://github.com/azukiapp/feedbin)
 

@@ -1,26 +1,60 @@
-# testing...
+## Easy way to test and clean environment, including `sync_folders` and `persistent_folders`
+
+> FIXME: to work on Mac, must change `azk info | grep -e` line to execute from a container shell;
 
 ```bash
 # saitodisse/huginn#azkfile
-cd /tmp/buttons/huginn && azk stop && cd /tmp/buttons && sudo rm -rf /tmp/buttons/huginn
-azk start -Rvvv saitodisse/huginn#azkfile /tmp/buttons/huginn
+sudo ls && \
+echo 'going to /tmp/buttons/huginn folder'
+cd /tmp/buttons/huginn && \
+azk stop && \
+azk info | grep -e '\(sync_folders\|persistent_folders\)' | awk -F ':' '{ print $2 }' | sed 's/.*\(persistent_folders\|sync_folders\)\/\(\w\+\).*/\2/g' | tail -n 1 | xargs -n 1 -I VARR sudo rm -rf ~/.azk/data/sync_folders/VARR ~/.azk/data/persistent_folders/VARR && \
+cd /tmp/buttons && \
+sudo rm -rf /tmp/buttons/huginn && \
+azk start -o -R -vvv saitodisse/huginn#azkfile /tmp/buttons/huginn
 
 # saitodisse/isomorphic500#azkfile
-cd /tmp/buttons/isomorphic500 && azk stop && cd /tmp/buttons && sudo rm -rf /tmp/buttons/isomorphic500
-azk start -Rvvv saitodisse/isomorphic500#azkfile /tmp/buttons/isomorphic500
+sudo ls && \
+echo 'going to /tmp/buttons/isomorphic500 folder'
+cd /tmp/buttons/isomorphic500 && \
+azk stop && \
+azk info | grep -e '\(sync_folders\|persistent_folders\)' | awk -F ':' '{ print $2 }' | sed 's/.*\(persistent_folders\|sync_folders\)\/\(\w\+\).*/\2/g' | tail -n 1 | xargs -n 1 -I VARR sudo rm -rf ~/.azk/data/sync_folders/VARR ~/.azk/data/persistent_folders/VARR && \
+cd /tmp/buttons && \
+sudo rm -rf /tmp/buttons/isomorphic500 && \
+azk start -o -R -vvv saitodisse/isomorphic500#azkfile /tmp/buttons/isomorphic500
 
 # saitodisse/discourse#feature/azkfile
-cd /tmp/buttons/discourse && azk stop && cd /tmp/buttons && sudo rm -rf /tmp/buttons/discourse
-azk start -Rvvv saitodisse/discourse#feature/azkfile /tmp/buttons/discourse
+sudo ls && \
+echo 'going to /tmp/buttons/discourse folder'
+cd /tmp/buttons/discourse && \
+azk stop && \
+azk info | grep -e '\(sync_folders\|persistent_folders\)' | awk -F ':' '{ print $2 }' | sed 's/.*\(persistent_folders\|sync_folders\)\/\(\w\+\).*/\2/g' | tail -n 1 | xargs -n 1 -I VARR sudo rm -rf ~/.azk/data/sync_folders/VARR ~/.azk/data/persistent_folders/VARR && \
+cd /tmp/buttons && \
+sudo rm -rf /tmp/buttons/discourse && \
+azk start -o -R -vvv saitodisse/discourse#feature/azkfile /tmp/buttons/discourse
 
 # saitodisse/task-cerebral
-cd /tmp/buttons/task-cerebral && azk stop && cd /tmp/buttons && sudo rm -rf /tmp/buttons/task-cerebral
-azk start -Rvvv saitodisse/task-cerebral /tmp/buttons/task-cerebral
+sudo ls && \
+echo 'going to /tmp/buttons/task-cerebral folder'
+cd /tmp/buttons/task-cerebral && \
+azk stop && \
+azk info | grep -e '\(sync_folders\|persistent_folders\)' | awk -F ':' '{ print $2 }' | sed 's/.*\(persistent_folders\|sync_folders\)\/\(\w\+\).*/\2/g' | tail -n 1 | xargs -n 1 -I VARR sudo rm -rf ~/.azk/data/sync_folders/VARR ~/.azk/data/persistent_folders/VARR && \
+cd /tmp/buttons && \
+sudo rm -rf /tmp/buttons/task-cerebral && \
+azk start -o -R -vvv saitodisse/task-cerebral /tmp/buttons/task-cerebral
 
 # azukiapp/feedbin
-cd /tmp/buttons/feedbin && azk stop && cd /tmp/buttons && sudo rm -rf /tmp/buttons/feedbin
-azk start -Rvvv azukiapp/feedbin /tmp/buttons/feedbin
+sudo ls && \
+echo 'going to /tmp/buttons/feedbin folder'
+cd /tmp/buttons/feedbin && \
+azk stop && \
+azk info | grep -e '\(sync_folders\|persistent_folders\)' | awk -F ':' '{ print $2 }' | sed 's/.*\(persistent_folders\|sync_folders\)\/\(\w\+\).*/\2/g' | tail -n 1 | xargs -n 1 -I VARR sudo rm -rf ~/.azk/data/sync_folders/VARR ~/.azk/data/persistent_folders/VARR && \
+cd /tmp/buttons && \
+sudo rm -rf /tmp/buttons/feedbin && \
+azk start -o -R -vvv azukiapp/feedbin /tmp/buttons/feedbin
 ```
+
+## Links
 
 - http://huginn.dev.azk.io/
 - http://isomorphic500.dev.azk.io/
