@@ -75,7 +75,7 @@ azk start -o saitodisse/task-cerebral
 Feedbin is a simple, fast and nice looking RSS reader. Check [Azkfile.js](https://github.com/azukiapp/feedbin/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/azukiapp/feedbin/blob/azkfile/Azkfile.md) for more info.
 
 ```sh
-azk start -o azukiapp/feedbin
+azk start -o azukiapp/feedbin#azkfile
 ```
 
 
