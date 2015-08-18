@@ -5,10 +5,11 @@
 - [Huginn](#huginn)
 - [Isomorphic500](#isomorphic500)
 - [Discourse](#discourse)
-- [Task-cerebral](#task-cerebral)
+- [task-cerebral](#task-cerebral)
 - [Feedbin](#feedbin)
 - [Diaspora](#diaspora)
 - [Jekyll](#jekyll)
+- [lets-chat](#lets-chat)
 
 <!-- /MarkdownTOC -->
 
@@ -54,7 +55,7 @@ azk start -o saitodisse/discourse#feature/azkfile
 
 ----------------------
 
-### [Task Cerebral](https://github.com/saitodisse/task-cerebral)
+### [task cerebral](https://github.com/saitodisse/task-cerebral)
 
 <a href="https://github.com/saitodisse/task-cerebral"><img src="https://github.com/saitodisse/task-cerebral/raw/master/github_assets/gliffy%20diagram.png" alt="Task Cerebral" title="Task Cerebral" width="200" /></a>
 
