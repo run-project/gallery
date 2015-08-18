@@ -75,6 +75,7 @@ Feedbin is a simple, fast and nice looking RSS reader. Check [Azkfile.js](https:
 azk start -o azukiapp/feedbin
 ```
 
+
 ----------------------
 
 ### [Diaspora](https://github.com/fearenales/diaspora/tree/azkfile)
@@ -85,4 +86,17 @@ Distributed and contextual social networking.
 
 ```sh
 azk start -o fearenales/diaspora#azkfile
+```
+
+
+----------------------
+
+### [Jekyll](https://github.com/fearenales/jekyll)
+
+<img src="https://raw.githubusercontent.com/fearenales/jekyll/master/site/img/logo-2x.png" alt="Jekyll" title="Jekyll" width="200" />
+
+Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](http://pages.github.com/), which you can use to host sites right from your GitHub repositories.
+
+```sh
+azk start -o fearenales/jekyll
 ```
