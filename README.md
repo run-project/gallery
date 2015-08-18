@@ -7,6 +7,8 @@
 - [Discourse](#discourse)
 - [Task-cerebral](#task-cerebral)
 - [Feedbin](#feedbin)
+- [Diaspora](#diaspora)
+- [Jekyll](#jekyll)
 
 <!-- /MarkdownTOC -->
 
