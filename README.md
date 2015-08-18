@@ -102,3 +102,16 @@ Jekyll is a simple, blog-aware, static site generator perfect for personal, proj
 ```sh
 azk start -o fearenales/jekyll
 ```
+
+
+----------------------
+
+### [lets-chat](https://github.com/saitodisse/lets-chat/tree/azkfile)
+
+<a href="https://github.com/saitodisse/lets-chat/tree/azkfile"><img src="http://i.imgur.com/C4uMD67.png" alt="lets-chat" title="lets-chat" width="200" /></a>
+
+A self-hosted chat app for small teams built by [Security Compass][seccom]. Check [Azkfile.js](https://github.com/saitodisse/lets-chat/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/lets-chat/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/lets-chat#azkfile
+```
