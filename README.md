@@ -75,5 +75,14 @@ Feedbin is a simple, fast and nice looking RSS reader. Check [Azkfile.js](https:
 azk start -o azukiapp/feedbin
 ```
 
+----------------------
 
+### [Diaspora](https://github.com/fearenales/diaspora/tree/azkfile)
 
+<a href="https://github.com/fearenales/diaspora/tree/azkfile"><img src="https://raw.githubusercontent.com/fearenales/diaspora/azkfile/app/assets/images/branding/logos/logo.png" alt="Diaspora" title="Diaspora" width="200" /></a>
+
+Distributed and contextual social networking.
+
+```sh
+azk start -o fearenales/diaspora#azkfile
+```
