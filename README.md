@@ -125,7 +125,7 @@ azk start -o saitodisse/lets-chat#azkfile
 
 <a href="https://github.com/saitodisse/dillinger/tree/azkfile"><img src="./images/dillinger.png" alt="dillinger" title="dillinger" width="200" /></a>
 
-A self-hosted chat app for small teams built by [Security Compass][seccom]. Check [Azkfile.js](https://github.com/saitodisse/dillinger/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/dillinger/blob/azkfile/Azkfile.md) for more info.
+The last Markdown editor, ever. Check [Azkfile.js](https://github.com/saitodisse/dillinger/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/dillinger/blob/azkfile/Azkfile.md) for more info.
 
 ```sh
 azk start -o saitodisse/dillinger#azkfile
