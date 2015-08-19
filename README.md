@@ -10,6 +10,7 @@
 - [Diaspora](#diaspora)
 - [Jekyll](#jekyll)
 - [lets-chat](#lets-chat)
+- [Dillinger](#dillinger)
 
 <!-- /MarkdownTOC -->
 
@@ -115,4 +116,17 @@ A self-hosted chat app for small teams built by [Security Compass][seccom]. Chec
 
 ```sh
 azk start -o saitodisse/lets-chat#azkfile
+```
+
+
+----------------------
+
+### [Dillinger](https://github.com/saitodisse/dillinger/tree/azkfile)
+
+<a href="https://github.com/saitodisse/dillinger/tree/azkfile"><img src="./images/dillinger.png" alt="dillinger" title="dillinger" width="200" /></a>
+
+A self-hosted chat app for small teams built by [Security Compass][seccom]. Check [Azkfile.js](https://github.com/saitodisse/dillinger/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/dillinger/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/dillinger#azkfile
 ```
