@@ -11,6 +11,7 @@
 - [Jekyll](#jekyll)
 - [lets-chat](#lets-chat)
 - [Dillinger](#dillinger)
+- [habitrpb](#dillinger)
 
 <!-- /MarkdownTOC -->
 
@@ -129,4 +130,17 @@ The last Markdown editor, ever. Check [Azkfile.js](https://github.com/saitodisse
 
 ```sh
 azk start -o saitodisse/dillinger#azkfile
+```
+
+
+----------------------
+
+### [Habitica (HabitRPG)](https://github.com/saitodisse/habitrpg/tree/azkfile)
+
+<a href="https://github.com/saitodisse/habitrpg/tree/azkfile"><img src="https://raw.githubusercontent.com/saitodisse/habitrpg/azkfile/website/public/front/images/intro.jpg" alt="habitrpg" title="habitrpg" width="200" /></a>
+
+A habit tracker app which treats your goals like a Role Playing Game. Check [Azkfile.js](https://github.com/saitodisse/habitrpg/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/habitrpg/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/habitrpg#azkfile
 ```
