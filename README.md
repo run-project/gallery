@@ -144,3 +144,16 @@ A habit tracker app which treats your goals like a Role Playing Game. Check [Azk
 ```sh
 azk start -o saitodisse/habitrpg#azkfile
 ```
+
+
+----------------------
+
+### [Paperwork](https://github.com/saitodisse/paperwork/tree/azkfile)
+
+<a href="https://github.com/saitodisse/paperwork/tree/azkfile"><img src="https://raw.githubusercontent.com/twostairs/paperwork/master/paperwork-logo.png" alt="paperwork" title="paperwork" width="200" /></a>
+
+Paperwork - OpenSource note-taking & archiving alternative to Evernote, Microsoft OneNote & Google Keep. Check [Azkfile.js](https://github.com/saitodisse/paperwork/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/paperwork/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/paperwork#azkfile
+```
