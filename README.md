@@ -11,7 +11,7 @@
 - [Jekyll](#jekyll)
 - [lets-chat](#lets-chat)
 - [Dillinger](#dillinger)
-- [habitrpb](#dillinger)
+- [Habitica (HabitRPG)](#habitica-habitrpg)
 
 <!-- /MarkdownTOC -->
 
