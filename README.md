@@ -12,6 +12,7 @@
 - [lets-chat](#lets-chat)
 - [Dillinger](#dillinger)
 - [Habitica (HabitRPG)](#habitica-habitrpg)
+- [Paperwork](#paperwork)
 
 <!-- /MarkdownTOC -->
 
