@@ -181,7 +181,7 @@ azk start -o saitodisse/rocket-chat-azk
 
 <a href="https://github.com/saitodisse/shout"><img src="./images/shout.png" alt="shout" title="shout" width="200" /></a>
 
-Shout — The self-hosted web IRC client. Check [Azkfile.js](https://github.com/saitodisse/paperwork/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/paperwork/blob/azkfile/Azkfile.md) for more info.
+Shout — The self-hosted web IRC client. Check [Azkfile.js](https://github.com/saitodisse/shout/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/shout/blob/azkfile/Azkfile.md) for more info.
 
 ```sh
 azk start -o saitodisse/shout
