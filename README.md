@@ -14,6 +14,7 @@
 - [Habitica (HabitRPG)](#habitica-habitrpg)
 - [Paperwork](#paperwork)
 - [Rocket Chat](#rocket-chat)
+- [Shout](#shout)
 
 <!-- /MarkdownTOC -->
 
@@ -171,4 +172,17 @@ Rocket Chat - The Complete Open Source Chat Solution. Check [Azkfile.js](https:/
 
 ```sh
 azk start -o saitodisse/rocket-chat-azk
+```
+
+
+----------------------
+
+### [Shout](https://github.com/saitodisse/shout)
+
+<a href="https://github.com/saitodisse/shout"><img src="./images/shout.png" alt="shout" title="shout" width="200" /></a>
+
+Shout — The self-hosted web IRC client. Check [Azkfile.js](https://github.com/saitodisse/paperwork/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/paperwork/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/shout
 ```
