@@ -13,6 +13,7 @@
 - [Dillinger](#dillinger)
 - [Habitica (HabitRPG)](#habitica-habitrpg)
 - [Paperwork](#paperwork)
+- [Rocket Chat](#rocket-chat)
 
 <!-- /MarkdownTOC -->
 
@@ -157,4 +158,17 @@ Paperwork - OpenSource note-taking & archiving alternative to Evernote, Microsof
 
 ```sh
 azk start -o saitodisse/paperwork#azkfile
+```
+
+
+----------------------
+
+### [Rocket Chat](https://github.com/saitodisse/rocket-chat-azk)
+
+<a href="https://github.com/saitodisse/rocket-chat-azk"><img src="https://rocket.chat/images/logo/logo-dark.svg?v3" alt="rocket-chat-azk" title="rocket-chat-azk" width="200" /></a>
+
+Rocket Chat - The Complete Open Source Chat Solution. Check [Azkfile.js](https://github.com/saitodisse/rocket-chat-azk/blob/master/Azkfile.js).
+
+```sh
+azk start -o saitodisse/rocket-chat-azk
 ```
