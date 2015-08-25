@@ -15,6 +15,7 @@
 - [Paperwork](#paperwork)
 - [Rocket Chat](#rocket-chat)
 - [Mattermost](#mattermost)
+- [Stringer](#stringer)
 
 <!-- /MarkdownTOC -->
 
@@ -198,4 +199,17 @@ Open source Slack-alternative in Golang and React. Check [Azkfile.js](https://gi
 
 ```sh
 azk start -o saitodisse/platform#azkfile
+```
+
+
+----------------------
+
+### [Stringer](https://github.com/saitodisse/stringer/tree/azkfile)
+
+<a href="https://github.com/saitodisse/stringer/raw/azkfile/screenshots/feed.png" alt="stringer" title="stringer" width="200" /></a>
+
+A self-hosted, anti-social RSS reader. Check [Azkfile.js](https://github.com/saitodisse/stringer/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/stringer/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/stringer#azkfile
 ```
