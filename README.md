@@ -26,7 +26,7 @@
   - php, php-fpm, composer, mysql
 - [Rocket Chat](#rocket-chat)
   - node, meteor, mongo
-- [Shout](#Shout)
+- [Shout](#shout)
   - node, express, socket.io, slate-irc
 - [Mattermost](#mattermost)
   - go, mysql, node, ruby, react, sass
