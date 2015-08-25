@@ -3,19 +3,35 @@
 <!-- MarkdownTOC -->
 
 - [Huginn](#huginn)
+  - ruby, rails, mysql
 - [Isomorphic500](#isomorphic500)
+  - node, fluxible, ngrok
 - [Discourse](#discourse)
+  - ruby, rails, sidekiq, postgres, redis, mailcatcher, ngrok
 - [task-cerebral](#task-cerebral)
+  - node, cerebal, rethinkdb, ngrok
 - [Feedbin](#feedbin)
+  - ruby, rails, clockwork, sidekiq, redis, postgres, elasticsearch, memcached
 - [Diaspora](#diaspora)
+  - ruby, rails, mysql, postgres, redis, sidekiq, mailcatcher
 - [Jekyll](#jekyll)
+  - ruby
 - [lets-chat](#lets-chat)
+  - node, mongo, express.oi, less, passport
 - [Dillinger](#dillinger)
+  - node, express, ejs, angular, markdown-it
 - [Habitica (HabitRPG)](#habitica-habitrpg)
+  - node, express, mongo
 - [Paperwork](#paperwork)
+  - php, php-fpm, composer, mysql
 - [Rocket Chat](#rocket-chat)
+  - node, meteor, mongo
+- [Shout](#Shout)
+  - node, express, socket.io, slate-irc
 - [Mattermost](#mattermost)
+  - go, mysql, node, ruby, react, sass
 - [Stringer](#stringer)
+  - ruby, postgres, sinatra
 
 <!-- /MarkdownTOC -->
 
