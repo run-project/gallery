@@ -206,7 +206,7 @@ azk start -o saitodisse/platform#azkfile
 
 ### [Stringer](https://github.com/saitodisse/stringer/tree/azkfile)
 
-<a href="https://github.com/saitodisse/stringer/raw/azkfile/screenshots/feed.png" alt="stringer" title="stringer" width="200" /></a>
+<a href="https://raw.githubusercontent.com/saitodisse/stringer/azkfile/screenshots/feed.png" alt="stringer" title="stringer" width="200" /></a>
 
 A self-hosted, anti-social RSS reader. Check [Azkfile.js](https://github.com/saitodisse/stringer/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/stringer/blob/azkfile/Azkfile.md) for more info.
 
