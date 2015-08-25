@@ -14,7 +14,7 @@
 - [Habitica (HabitRPG)](#habitica-habitrpg)
 - [Paperwork](#paperwork)
 - [Rocket Chat](#rocket-chat)
-- [Shout](#shout)
+- [Mattermost](#mattermost)
 
 <!-- /MarkdownTOC -->
 
@@ -185,4 +185,17 @@ Shout — The self-hosted web IRC client. Check [Azkfile.js](https://github.com/
 
 ```sh
 azk start -o saitodisse/shout
+```
+
+
+----------------------
+
+### [Mattermost](https://github.com/saitodisse/platform/tree/azkfile)
+
+<a href="https://github.com/saitodisse/platform/tree/azkfile"><img src=".//images/mattermost.png" alt="platform" title="platform" width="200" /></a>
+
+Open source Slack-alternative in Golang and React. Check [Azkfile.js](https://github.com/saitodisse/platform/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/platform/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/platform#azkfile
 ```
