@@ -34,6 +34,8 @@
   - ruby, postgres, sinatra
 - [Dashboard](#dashboard)
   - node, mongo, redis, express, kue
+- [Regexr](#regexr)
+  - node, ruby, compass, sass
 
 <!-- /MarkdownTOC -->
 
@@ -247,6 +249,19 @@ Check [Azkfile.js](https://github.com/saitodisse/stringer/blob/azkfile/Azkfile.j
 azk start -o saitodisse/stringer#azkfile
 ```
 
+----------------------
+
+### [Dashboard](https://github.com/saitodisse/dashboard/tree/azkfile)
+
+<a href="https://github.com/saitodisse/dashboard/tree/azkfile"><img src="https://raw.githubusercontent.com/saitodisse/dashboard/azkfile/preview.png" alt="dashboard" title="dashboard" width="200" /></a>
+
+Your life's personal dashboard. [http://www.reportr.io](http://www.reportr.io)
+Check [Azkfile.js](https://github.com/saitodisse/dashboard/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/dashboard/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/dashboard#azkfile
+```
+
 
 ----------------------
 
@@ -259,18 +274,4 @@ Check [Azkfile.js](https://github.com/saitodisse/regexr/blob/azkfile/Azkfile.js)
 
 ```sh
 azk start -o saitodisse/regexr#azkfile
-```
-
-
-----------------------
-
-### [Dashboard](https://github.com/saitodisse/dashboard/tree/azkfile)
-
-<a href="https://github.com/saitodisse/dashboard/tree/azkfile"><img src="https://raw.githubusercontent.com/saitodisse/dashboard/azkfile/preview.png" alt="dashboard" title="dashboard" width="200" /></a>
-
-Your life's personal dashboard. [http://www.reportr.io](http://www.reportr.io)
-Check [Azkfile.js](https://github.com/saitodisse/dashboard/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/dashboard/blob/azkfile/Azkfile.md) for more info.
-
-```sh
-azk start -o saitodisse/dashboard#azkfile
 ```
