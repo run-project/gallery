@@ -115,7 +115,6 @@ azk start -o azukiapp/feedbin#azkfile
 <a href="https://github.com/fearenales/diaspora/tree/azkfile"><img src="https://raw.githubusercontent.com/fearenales/diaspora/azkfile/app/assets/images/branding/logos/logo.png" alt="Diaspora" title="Diaspora" width="200" /></a>
 
 Distributed and contextual social networking.
-
 Check [Azkfile.js](https://github.com/fearenales/diaspora/blob/azkfile/Azkfile.js)
 
 ```sh
@@ -130,7 +129,7 @@ azk start -o fearenales/diaspora#azkfile
 <a href="https://github.com/fearenales/jekyll"><img src="https://raw.githubusercontent.com/fearenales/jekyll/master/site/img/logo-2x.png" alt="Jekyll" title="Jekyll" width="200" /></a>
 
 Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](http://pages.github.com/), which you can use to host sites right from your GitHub repositories.
-Check [Azkfile.js](https://github.com/fearenales/jekyll/blob/azkfile/Azkfile.js)
+Check [Azkfile.js](https://github.com/fearenales/jekyll/blob/master/Azkfile.js)
 
 ```sh
 azk start -o fearenales/jekyll
@@ -246,6 +245,20 @@ Check [Azkfile.js](https://github.com/saitodisse/stringer/blob/azkfile/Azkfile.j
 
 ```sh
 azk start -o saitodisse/stringer#azkfile
+```
+
+
+----------------------
+
+### [Regexr](https://github.com/saitodisse/regexr/tree/azkfile)
+
+<a href="https://github.com/saitodisse/regexr/tree/azkfile"><img src="./images/regexr.png" alt="regexr" title="regexr" width="200" /></a>
+
+RegExr is a HTML/JS based tool for creating, testing, and learning about Regular Expressions.
+Check [Azkfile.js](https://github.com/saitodisse/regexr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/regexr/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/regexr#azkfile
 ```
 
 
