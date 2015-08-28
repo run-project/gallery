@@ -36,6 +36,8 @@
   - node, mongo, redis, express, kue
 - [Regexr](#regexr)
   - node, ruby, compass, sass
+- [Cloudtunes](#cloudtunes)
+  - python, tornado, celery, mongo, redis, coffeescript, sass, brunch, backbone.js, socketio, handlebars, compass, soundmanager
 
 <!-- /MarkdownTOC -->
 
@@ -274,4 +276,18 @@ Check [Azkfile.js](https://github.com/saitodisse/regexr/blob/azkfile/Azkfile.js)
 
 ```sh
 azk start -o saitodisse/regexr#azkfile
+```
+
+
+----------------------
+
+### [Cloudtunes](https://github.com/saitodisse/cloudtunes/tree/azkfile)
+
+<a href="https://github.com/saitodisse/cloudtunes/tree/azkfile"><img src="https://raw.githubusercontent.com/saitodisse/cloudtunes/azkfile/screenshots/Collection.png" alt="cloudtunes" title="cloudtunes" width="200" /></a>
+
+Open source, web-based music player for the cloud.
+Check [Azkfile.js](https://github.com/saitodisse/cloudtunes/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/saitodisse/cloudtunes/blob/azkfile/Azkfile.md) for more info.
+
+```sh
+azk start -o saitodisse/cloudtunes#azkfile
 ```
