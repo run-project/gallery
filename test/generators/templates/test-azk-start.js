@@ -37,7 +37,7 @@ var tempFn = doT.template([
   'echo " +++++++++++++++++++++++++++"',
   'echo "  restarting with reprovision..."',
   'echo " +++++++++++++++++++++++++++"',
-  'azk start -Rovv {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}} /tmp/buttons/{{=it.name}}',
+  'azk start -Rvv {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}} /tmp/buttons/{{=it.name}}',
   '',
   'echo ""',
   'echo $(date)',

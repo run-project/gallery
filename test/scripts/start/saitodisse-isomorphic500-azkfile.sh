@@ -18,7 +18,7 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-azk start -Rovv saitodisse/isomorphic500#azkfile /tmp/buttons/isomorphic500
+azk start -Rvv saitodisse/isomorphic500#azkfile /tmp/buttons/isomorphic500
 
 echo ""
 echo $(date)

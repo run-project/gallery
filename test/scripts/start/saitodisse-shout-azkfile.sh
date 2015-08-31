@@ -18,7 +18,7 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-azk start -Rovv saitodisse/shout#azkfile /tmp/buttons/shout
+azk start -Rvv saitodisse/shout#azkfile /tmp/buttons/shout
 
 echo ""
 echo $(date)

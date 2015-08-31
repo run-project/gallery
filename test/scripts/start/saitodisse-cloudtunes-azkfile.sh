@@ -18,7 +18,7 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-azk start -Rovv saitodisse/cloudtunes#azkfile /tmp/buttons/cloudtunes
+azk start -Rvv saitodisse/cloudtunes#azkfile /tmp/buttons/cloudtunes
 
 echo ""
 echo $(date)

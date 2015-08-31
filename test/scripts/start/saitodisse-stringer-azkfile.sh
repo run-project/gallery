@@ -18,7 +18,7 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-azk start -Rovv saitodisse/stringer#azkfile /tmp/buttons/stringer
+azk start -Rvv saitodisse/stringer#azkfile /tmp/buttons/stringer
 
 echo ""
 echo $(date)
