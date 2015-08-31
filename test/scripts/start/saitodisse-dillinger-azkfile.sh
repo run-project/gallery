@@ -7,6 +7,9 @@ echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 echo ""
+echo $(date)
+echo ""
+
 echo "cd /tmp/buttons/dillinger folder"
 cd /tmp/buttons/dillinger
 
@@ -15,5 +18,9 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-[ -e /tmp/buttons/dillinger ] || azk start -Rovv saitodisse/dillinger#azkfile /tmp/buttons/dillinger
-[ -e /tmp/buttons/dillinger ] && cd /tmp/buttons/dillinger && azk start -Rovv
+azk start -Rovv saitodisse/dillinger#azkfile /tmp/buttons/dillinger
+
+echo ""
+echo $(date)
+echo ""
+

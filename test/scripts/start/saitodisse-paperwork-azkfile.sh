@@ -7,6 +7,9 @@ echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 echo ""
+echo $(date)
+echo ""
+
 echo "cd /tmp/buttons/paperwork folder"
 cd /tmp/buttons/paperwork
 
@@ -15,5 +18,9 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-[ -e /tmp/buttons/paperwork ] || azk start -Rovv saitodisse/paperwork#azkfile /tmp/buttons/paperwork
-[ -e /tmp/buttons/paperwork ] && cd /tmp/buttons/paperwork && azk start -Rovv
+azk start -Rovv saitodisse/paperwork#azkfile /tmp/buttons/paperwork
+
+echo ""
+echo $(date)
+echo ""
+

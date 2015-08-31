@@ -48,7 +48,6 @@
 
 ./scripts/start/saitodisse-stringer-azkfile.sh
 ./scripts/clear/saitodisse-stringer-azkfile.sh
-
 ```
 
 #### download and update all azkfiles

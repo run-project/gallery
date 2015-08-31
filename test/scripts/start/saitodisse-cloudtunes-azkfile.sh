@@ -7,6 +7,9 @@ echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 echo ""
+echo $(date)
+echo ""
+
 echo "cd /tmp/buttons/cloudtunes folder"
 cd /tmp/buttons/cloudtunes
 
@@ -15,5 +18,9 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-[ -e /tmp/buttons/cloudtunes ] || azk start -Rovv saitodisse/cloudtunes#azkfile /tmp/buttons/cloudtunes
-[ -e /tmp/buttons/cloudtunes ] && cd /tmp/buttons/cloudtunes && azk start -Rovv
+azk start -Rovv saitodisse/cloudtunes#azkfile /tmp/buttons/cloudtunes
+
+echo ""
+echo $(date)
+echo ""
+

@@ -7,6 +7,9 @@ echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 echo ""
+echo $(date)
+echo ""
+
 echo "cd /tmp/buttons/habitrpg folder"
 cd /tmp/buttons/habitrpg
 
@@ -15,5 +18,9 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-[ -e /tmp/buttons/habitrpg ] || azk start -Rovv saitodisse/habitrpg#azkfile /tmp/buttons/habitrpg
-[ -e /tmp/buttons/habitrpg ] && cd /tmp/buttons/habitrpg && azk start -Rovv
+azk start -Rovv saitodisse/habitrpg#azkfile /tmp/buttons/habitrpg
+
+echo ""
+echo $(date)
+echo ""
+

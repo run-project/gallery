@@ -26,6 +26,9 @@ var tempFn = doT.template([
   'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
   '',
   'echo ""',
+  'echo $(date)',
+  'echo ""',
+  '',
   'echo "cd /tmp/buttons/{{=it.name}} folder"',
   'cd /tmp/buttons/{{=it.name}}',
   '',
@@ -34,8 +37,12 @@ var tempFn = doT.template([
   'echo " +++++++++++++++++++++++++++"',
   'echo "  restarting with reprovision..."',
   'echo " +++++++++++++++++++++++++++"',
-  '[ -e /tmp/buttons/{{=it.name}} ] || azk start -Rovv {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}} /tmp/buttons/{{=it.name}}',
-  '[ -e /tmp/buttons/{{=it.name}} ] && cd /tmp/buttons/{{=it.name}} && azk start -Rovv'
+  'azk start -Rovv {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}} /tmp/buttons/{{=it.name}}',
+  '',
+  'echo ""',
+  'echo $(date)',
+  'echo ""',
+  ''
 
 ].join('\n'))
 

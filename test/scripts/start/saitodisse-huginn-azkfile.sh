@@ -7,6 +7,9 @@ echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"
 
 echo ""
+echo $(date)
+echo ""
+
 echo "cd /tmp/buttons/huginn folder"
 cd /tmp/buttons/huginn
 
@@ -15,5 +18,9 @@ echo ""
 echo " +++++++++++++++++++++++++++"
 echo "  restarting with reprovision..."
 echo " +++++++++++++++++++++++++++"
-[ -e /tmp/buttons/huginn ] || azk start -Rovv saitodisse/huginn#azkfile /tmp/buttons/huginn
-[ -e /tmp/buttons/huginn ] && cd /tmp/buttons/huginn && azk start -Rovv
+azk start -Rovv saitodisse/huginn#azkfile /tmp/buttons/huginn
+
+echo ""
+echo $(date)
+echo ""
+
