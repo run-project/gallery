@@ -21,7 +21,7 @@ var tempFn = doT.template([
   'echo ""',
   'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
   'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
-  'echo " Starting {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}}"',
+  'echo " Cleaning {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}}"',
   'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
   'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
   '',
@@ -29,13 +29,28 @@ var tempFn = doT.template([
   'echo "cd /tmp/buttons/{{=it.name}} folder"',
   'cd /tmp/buttons/{{=it.name}}',
   '',
+
   'echo ""',
   'echo ""',
   'echo " +++++++++++++++++++++++++++"',
-  'echo "  restarting with reprovision..."',
+  'echo "  $ azk stop"',
   'echo " +++++++++++++++++++++++++++"',
-  '[ -e /tmp/buttons/{{=it.name}} ] || azk start -Rovv {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}} /tmp/buttons/{{=it.name}}',
-  '[ -e /tmp/buttons/{{=it.name}} ] && cd /tmp/buttons/{{=it.name}} && azk start -Rovv'
+  'azk stop',
+  '',
+
+  'echo ""',
+  'echo ""',
+  'echo " +++++++++++++++++++++++++++"',
+  'echo "  removing any persistent/sync folders..."',
+  'echo " +++++++++++++++++++++++++++"',
+  'azk info | grep -e "\\(sync_folders\\|persistent_folders\\)" | awk -F ":" "{ print $2 }" | sed "s/.*\\(persistent_folders\\|sync_folders\\)\\/\\(\\w\\+\\).*/\\2/g" | tail -n 1 | xargs -n 1 -I VARR sudo rm -rf ~/.azk/data/sync_folders/VARR ~/.azk/data/persistent_folders/VARR',
+  'echo ""',
+  'echo ""',
+  'echo " +++++++++++++++++++++++++++"',
+  'echo "  removing old project folder if exists..."',
+  'echo " +++++++++++++++++++++++++++"',
+  'cd /tmp/buttons',
+  'sudo rm -rf /tmp/buttons/{{=it.name}}'
 
 ].join('\n'))
 
