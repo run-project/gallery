@@ -1,25 +1,19 @@
 #! /bin/bash
 
 # generate all starts
-echo 'cleaning'
+echo ''
+echo ''
+echo 'compiling scripts'
 ./generators/create-script-test-azk-start.sh
+
+echo ''
+echo ''
+echo 'restarting docker and azk'
 ./scripts-shared/stop-clean-start-agent.sh
-./scripts/clear/saitodisse-cloudtunes-azkfile.sh
-./scripts/clear/saitodisse-dashboard-azkfile.sh
-./scripts/clear/saitodisse-dillinger-azkfile.sh
-./scripts/clear/saitodisse-discourse-azkfile.sh
-./scripts/clear/saitodisse-habitrpg-azkfile.sh
-./scripts/clear/saitodisse-huginn-azkfile.sh
-./scripts/clear/saitodisse-isomorphic500-azkfile.sh
-./scripts/clear/saitodisse-lets-chat-azkfile.sh
-./scripts/clear/saitodisse-paperwork-azkfile.sh
-./scripts/clear/saitodisse-platform-azkfile.sh
-./scripts/clear/saitodisse-regexr-azkfile.sh
-./scripts/clear/saitodisse-shout-azkfile.sh
-./scripts/clear/saitodisse-stringer-azkfile.sh
 
+echo ''
+echo ''
 echo 'starting'
-
 mkdir -p logs
 
 ./scripts/clear/saitodisse-cloudtunes-azkfile.sh
