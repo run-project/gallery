@@ -1,0 +1,13 @@
+node generate-sh.js saitodisse cloudtunes > testAll.sh
+node generate-sh.js saitodisse dashboard >> testAll.sh
+node generate-sh.js saitodisse dillinger >> testAll.sh
+node generate-sh.js saitodisse discourse >> testAll.sh
+node generate-sh.js saitodisse habitrpg >> testAll.sh
+node generate-sh.js saitodisse huginn >> testAll.sh
+node generate-sh.js saitodisse isomorphic500 >> testAll.sh
+node generate-sh.js saitodisse lets-chat >> testAll.sh
+node generate-sh.js saitodisse paperwork >> testAll.sh
+node generate-sh.js saitodisse platform >> testAll.sh
+node generate-sh.js saitodisse regexr >> testAll.sh
+node generate-sh.js saitodisse shout >> testAll.sh
+node generate-sh.js saitodisse stringer >> testAll.sh

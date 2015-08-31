@@ -1,0 +1,15 @@
+{
+  "name": "azk-gallery-test",
+  "version": "0.0.1",
+  "description": "scripts to test gallery projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot": "^1.0.3",
+    "standard": "^5.1.1"
+  }
+}
