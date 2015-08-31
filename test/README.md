@@ -3,11 +3,13 @@
 #### test all button (may take too many minutes)
 
 ```sh
+# generate all starts
+./generators/create-script-test-azk-start.sh
+
 # azk agent: stop, clean and start
 ./scripts-shared/stop-clean-start-agent.sh
 
 # create repo and start each one
-./scripts/saitodisse-discourse-azkfile.sh
 ./scripts/saitodisse-cloudtunes-azkfile.sh
 ./scripts/saitodisse-dashboard-azkfile.sh
 ./scripts/saitodisse-dillinger-azkfile.sh
