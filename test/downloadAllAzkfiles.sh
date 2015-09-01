@@ -4,7 +4,12 @@ echo "downloading all..."
 echo "---------------------------------------"
 echo "Downloading saitodisse/cloudtunes#azkfile..."
 echo "---------------------------------------"
+
 mkdir -p azkfiles
+
+
+
+
 curl -o azkfiles/saitodisse-cloudtunes-azkfile-Azkfile.js https://raw.githubusercontent.com/saitodisse/cloudtunes/azkfile//Azkfile.js
 
 echo "---------------------------------------"

@@ -1,0 +1,2 @@
+- [ ] one list of user/repo/branch only
+- [ ] save all logs

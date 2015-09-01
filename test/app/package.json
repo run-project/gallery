@@ -9,7 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^2.9.34",
+    "colors": "^1.1.2",
     "dot": "^1.0.3",
-    "standard": "^5.1.1"
+    "keen-js": "^3.2.7",
+    "phantomjs": "^1.9.18",
+    "standard": "^5.1.1",
+    "webshot": "^0.16.0"
   }
 }

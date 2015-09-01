@@ -1,5 +1,5 @@
 systems({
-  "cloudtunes-server": {
+  "cloudtunes": {
     depends: ["mongo", "redis", "cloudtunes-webapp"],
     image: {"docker": "azukiapp/python:2.7.9"},
     provision: [

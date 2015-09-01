@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    body {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="my_chart" style="height: 500px"></div>
+
+<script src="https://d26b395fwzu5fz.cloudfront.net/3.2.7/keen.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  var client = new Keen({
+  projectId: "55e4d19790e4bd4f09be5024",
+  readKey: "8c94f468c030f1e493f7ec19c4996a394ebfce36a774dbd4bfd430f41a0ac01b5e3fa661ec89ae590affe1eae98c785f7ee4d77b723374eddd5df0e1a9889a002caf312fa45b65e2f3cbcab48e5017a21e36cd3363d74ae9e37784a150196e6cf18f1c7d8d6961ff81c8154433582d02"
+
+});
+
+Keen.ready(function(){
+
+  var query = new Keen.Query("average", {
+    eventCollection: "azk-button-test",
+    groupBy: "name",
+    targetProperty: "elapsed",
+    timeframe: "this_1_years",
+    chart_type: 'piechart',
+    timezone: "UTC"
+  });
+
+  client.draw(query, document.getElementById("my_chart"), {
+    chartType: "barchart",
+    title: "elapsed time to provision and run app",
+        chartArea: {
+      height: '90%',
+      left: '15%',
+      top: '5%',
+      width: '95%'
+    },
+    isStacked: true,
+  });
+
+});
+</script>
+
+</body>
+</html>
