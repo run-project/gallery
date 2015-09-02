@@ -3,7 +3,7 @@ systems({
     depends: [],
     image: {"docker": "azukiapp/ruby"},
     provision: [
-      "npm install",
+      "NODE_ENV=dev npm install",
       "bundle install --path /azk/bundler",
       "node_modules/.bin/grunt build",
     ],
