@@ -1,6 +1,8 @@
 var runner = require('./runner/runner')
 var takeShot = require('./runner/take-shot')
 var path = require('path')
+var os = require('os');
+var osName = require('os-name');
 
 module.exports = function (project, opts) {
 
@@ -77,6 +79,13 @@ module.exports = function (project, opts) {
       repoOwner: project.repoOwner,
       name: project.name,
       branch: project.branch,
+      device_info: {
+        os: osName(),
+        proc_arch: os.arch(),
+        total_memory: Math.floor(os.totalmem() / 1024 / 1024),
+        cpu_info: os.cpus()[0].model,
+        cpu_count: os.cpus().length
+      },
       keen: {
         timestamp: new Date().toISOString()
       }
