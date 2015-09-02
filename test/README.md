@@ -14,17 +14,17 @@ Edit `projects-list.js`, then:
 ##### Start first time
 
 ```sh
-./stop-clean-start-agent.sh && ./run-first-time.sh
+./_stop-clean-start-agent.sh && ./run-first-time.sh
 ```
 
 ##### Start reprovisioning
 
 ```sh
-./run-restart-reprovision.sh
+./_stop-clean-start-agent.sh && ./run-restart-reprovision.sh
 ```
 
-##### Clear All
+##### Clear all
 
 ```sh
-./stop-clean-start-agent.sh && sudo ./clear-buttons.sh
+./_stop-clean-start-agent.sh && sudo ./_clear-buttons.sh
 ```

@@ -11,5 +11,8 @@ BB.Promise.each(all_projects, function (project) {
   return run(project, {
     execution_path: process.argv[2]
   })
+  .catch(function (err) {
+    console.log('ERROR:', err)
+  })
 })
 

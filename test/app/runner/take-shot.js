@@ -14,7 +14,7 @@ module.exports = function (url, destination, opt) {
         width: 900,
         height: 600 // 'all'
       },
-      renderDelay: 3000 // wait for 10 seconds before take the shot
+      renderDelay: 3000 // wait for 3 seconds before take the shot
     }
 
     webshot(url, destination, options, function (err) {

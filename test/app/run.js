@@ -1,8 +1,9 @@
 var runner = require('./runner/runner')
 var takeShot = require('./runner/take-shot')
 var path = require('path')
-var os = require('os');
-var osName = require('os-name');
+var os = require('os')
+var osName = require('os-name')
+var fsAsync = require('file-async')
 
 module.exports = function (project, opts) {
 
@@ -61,9 +62,16 @@ module.exports = function (project, opts) {
       path.join(__dirname, '/build/scripts/start/' + project.repoOwner + '-' + project.name + '-' + project.branch + '.sh'))
     } else if (opts.execution_path === 'restart-reprovision') {
       console.log('\n\n - [' + project.name + '] Restarting...')
-      return runner.run({},
-      '/bin/bash',
-      path.join(__dirname, '/build/scripts/restart-reprovision/' + project.repoOwner + '-' + project.name + '-' + project.branch + '.sh'))
+      return fsAsync.exists('/tmp/buttons/' + project.name)
+      .then(function (exist) {
+        if (exist) {
+          return runner.run({},
+          '/bin/bash',
+          path.join(__dirname, '/build/scripts/restart-reprovision/' + project.repoOwner + '-' + project.name + '-' + project.branch + '.sh'))
+        } else {
+          throw new Error('/tmp/buttons/' + project.name + ' does not exist')
+        }
+      })
     }
   })
 
@@ -97,7 +105,7 @@ module.exports = function (project, opts) {
   .then(function () {
     var url = project.name + '.dev.azk.io'
     var destination = path.join(__dirname, '../screenshots/' + project.repoOwner + '-' + project.name + '-' + project.branch + '-1.png')
-    console.log('\n\n - [' + project.name + '] 1 Saving screenshot from `' + url + '` to `' + destination + '`')
+    console.log('\n\n - [' + project.name + '] 1 Saving screenshot from http://' + url + ' to `' + destination + '`')
     return takeShot(
       url,
       destination,
@@ -107,17 +115,7 @@ module.exports = function (project, opts) {
   .then(function () {
     var url = project.name + '.dev.azk.io'
     var destination = path.join(__dirname, '../screenshots/' + project.repoOwner + '-' + project.name + '-' + project.branch + '-2.png')
-    console.log('\n\n - [' + project.name + '] 2 Saving screenshot from `' + url + '` to `' + destination + '`')
-    return takeShot(
-      url,
-      destination,
-      null
-    )
-  })
-  .then(function () {
-    var url = project.name + '.dev.azk.io'
-    var destination = path.join(__dirname, '../screenshots/' + project.repoOwner + '-' + project.name + '-' + project.branch + '-3.png')
-    console.log('\n\n - [' + project.name + '] 3 Saving screenshot from `' + url + '` to `' + destination + '`')
+    console.log('\n\n - [' + project.name + '] 2 Saving screenshot from http://' + url + ' to `' + destination + '`')
     return takeShot(
       url,
       destination,
