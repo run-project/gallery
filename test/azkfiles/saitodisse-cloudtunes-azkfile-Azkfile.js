@@ -1,5 +1,5 @@
 systems({
-  "cloudtunes": {
+  "cloudtunes-server": {
     depends: ["mongo", "redis", "cloudtunes-webapp"],
     image: {"docker": "azukiapp/python:2.7.9"},
     provision: [
@@ -24,7 +24,7 @@ systems({
     wait: {"retry": 20, "timeout": 1000},
     http: {
       domains: [
-        "#{system.name}.#{azk.default_domain}", // default azk
+        "cloudtunes.#{azk.default_domain}", // default azk
         '#{process.env.AZK_HOST_IP}'            // used if deployed
       ]
     },

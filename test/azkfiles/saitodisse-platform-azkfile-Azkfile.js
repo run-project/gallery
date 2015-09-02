@@ -5,7 +5,7 @@
 /* see Azkfile.md */
 systems({
 
-  mattermost: {
+  platform: {
     depends: ['mysql'],
 
     // configure docker and volumes

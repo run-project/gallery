@@ -1,18 +1,30 @@
 # test all from gallery
 
+- download latest Azkfiles (easy to search)
+- stops azk agent
+- kill/clean Docker containers
+- download and start each project on `projects-list.js`
+- send elapsed time to keen.io
+- save screenshots to check if it is working
+
 #### test all button (may take too many minutes)
 
 Edit `projects-list.js`, then:
 
+##### Start first time
+
 ```sh
-./stop-clean-start-agent.sh && ./runAllStarts.sh
+./stop-clean-start-agent.sh && ./run-first-time.sh
 ```
 
-#### download and update all azkfiles
+##### Start reprovisioning
 
 ```sh
-./generators/download-azkfile.sh && ./downloadAllAzkfiles.sh
-git add . -A
-git commit -m"Azkfiles Updated"
-git push
+./run-restart-reprovision.sh
+```
+
+##### Clear All
+
+```sh
+./stop-clean-start-agent.sh && sudo ./clear-buttons.sh
 ```

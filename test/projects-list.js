@@ -1,69 +1,18 @@
 module.exports = {
   projects: [
-    {
-      repoOwner: 'saitodisse',
-      name: 'dashboard',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'lets-chat',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'regexr',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'shout',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'cloudtunes',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'dillinger',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'discourse',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'habitrpg',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'huginn',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'isomorphic500',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'paperwork',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'platform',
-      branch: 'azkfile'
-    },
-    {
-      repoOwner: 'saitodisse',
-      name: 'stringer',
-      branch: 'azkfile'
-    }
+    // { name:     'cloudtunes',      repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'dashboard',       repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'dillinger',       repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'discourse',       repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'habitrpg',        repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'huginn',          repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'shout',           repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'stringer',        repoOwner: 'saitodisse', branch: 'azkfile' }
+
+    { name:     'lets-chat',       repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'regexr',          repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'isomorphic500',   repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'paperwork',       repoOwner: 'saitodisse', branch: 'azkfile' },
+    // { name:     'platform',        repoOwner: 'saitodisse', branch: 'azkfile' },
   ]
 }

@@ -1,4 +1,4 @@
-var createScript = require('./create-script')
+var createScript = require('../create-script')
 var path = require('path')
 
 module.exports = function (opts) {
@@ -6,14 +6,8 @@ module.exports = function (opts) {
     '',
     'echo ""',
     'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
-    'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
     'echo " Starting {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}}"',
     'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
-    'echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+"',
-    '',
-    'echo "----------------"',
-    'echo THE START: $(date)',
-    'echo "----------------"',
     '',
     'echo "cd /tmp/buttons/{{=it.name}} folder"',
     'cd /tmp/buttons/{{=it.name}}',
@@ -21,13 +15,9 @@ module.exports = function (opts) {
     'echo ""',
     'echo ""',
     'echo " +++++++++++++++++++++++++++"',
-    'echo "  restarting with reprovision..."',
+    'echo "  start from Github URL..."',
     'echo " +++++++++++++++++++++++++++"',
     'azk start -Rvv {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}} /tmp/buttons/{{=it.name}}',
-    '',
-    'echo "----------------"',
-    'echo THE END: $(date)',
-    'echo "----------------"',
     ''
 
   ].join('\n'),

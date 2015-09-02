@@ -4,7 +4,7 @@
  * see Azkfile.md for more info
  */
 systems({
-  frontend: {
+  paperwork: {
     depends: ['db'],
     image: { docker: "azukiapp/php-fpm:5.6" },
     // Steps to execute before running instances

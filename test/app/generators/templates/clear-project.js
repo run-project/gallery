@@ -1,11 +1,11 @@
-var createScript = require('./create-script')
+var createScript = require('../create-script')
 var path = require('path')
 
 module.exports = function (opts) {
   return createScript([
     '',
     'echo ""',
-    'echo " - cleaning {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}}..."',
+    'echo " - Cleaning {{=it.repoOwner}}/{{=it.name}}#{{=it.branch}}..."',
     '',
     'echo "   $ cd /tmp/buttons/{{=it.name}} folder"',
     'cd /tmp/buttons/{{=it.name}}',
@@ -19,7 +19,8 @@ module.exports = function (opts) {
     '',
     'echo " - removing old project folder if exists..."',
     'cd /tmp/buttons',
-    'sudo rm -rf /tmp/buttons/{{=it.name}}'
+    'sudo rm -rf /tmp/buttons/{{=it.name}}',
+    ''
   ].join('\n'),
 
   path.join(__dirname, '../../build/scripts/clear/',
