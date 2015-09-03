@@ -2,19 +2,20 @@
 
 - download latest Azkfiles (easy to search)
 - stops azk agent
-- kill/clean Docker containers
+- clean persistent/sync forders
 - download and start each project on `projects-list.js`
 - send elapsed time to keen.io
 - save screenshots to check if it is working
+- can kill/clean Docker containers
 
 #### test all button (may take too many minutes)
 
 Edit `projects-list.js`, then:
 
-##### Clean azk and Docker in Linux
+##### npm install
 
 ```sh
-./linux_clean_docker_and_agent.sh
+npm install
 ```
 
 ##### Start first time (clean install)
@@ -30,3 +31,10 @@ npm install
 ./run-restart-reprovision.sh
 ```
 
+------------
+
+##### Clean azk and Docker in Linux
+
+```sh
+./linux_clean_docker_and_agent.sh
+```
