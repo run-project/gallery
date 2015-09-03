@@ -11,20 +11,22 @@
 
 Edit `projects-list.js`, then:
 
+##### Clean azk and Docker in Linux
+
+```sh
+./linux_clean_docker_and_agent.sh
+```
+
 ##### Start first time
 
 ```sh
-./linux_clean_docker_and_agent.sh && ./run-first-time.sh
+npm install
+./run-first-time.sh
 ```
 
 ##### Start reprovisioning
 
 ```sh
-./linux_clean_docker_and_agent.sh && ./run-restart-reprovision.sh
+./run-restart-reprovision.sh
 ```
 
-##### Clear all
-
-```sh
-./linux_clean_docker_and_agent.sh && sudo ./_clear-buttons.sh
-```

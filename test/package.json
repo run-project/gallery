@@ -1,0 +1,19 @@
+{
+  "name": "azk-gallery-test",
+  "version": "0.0.1",
+  "description": "auto test gallery projects",
+  "main": "projects-list.js",
+  "dependencies": {
+    "file-async": "^0.1.3",
+    "os-name": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "runAll.js 'first-time'"
+  },
+  "keywords": [
+    "azk"
+  ],
+  "author": "saitodisse",
+  "license": "ISC"
+}
