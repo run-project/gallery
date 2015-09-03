@@ -17,14 +17,14 @@ Edit `projects-list.js`, then:
 ./linux_clean_docker_and_agent.sh
 ```
 
-##### Start first time
+##### Start first time (clean install)
 
 ```sh
 npm install
 ./run-first-time.sh
 ```
 
-##### Start reprovisioning
+##### Restarting and reprovisioning
 
 ```sh
 ./run-restart-reprovision.sh
