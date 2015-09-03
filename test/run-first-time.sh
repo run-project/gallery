@@ -1,10 +1,9 @@
 #! /bin/bash
 
-./_create_folders.sh
-./_stop-clean-start-agent.sh
-# ./_clear-buttons.sh
+./prepare.sh
+# ./linux_clean_docker_and_agent.sh
 
 # -------------
 echo 'starting'
 
-node `pwd`/app/runAll.js 'first-time'
+azk nvm node `pwd`/app/runAll.js 'first-time'

@@ -112,16 +112,6 @@ module.exports = function (project, opts) {
       null
     )
   })
-  .then(function () {
-    var url = project.name + '.dev.azk.io'
-    var destination = path.join(__dirname, '../screenshots/' + project.repoOwner + '-' + project.name + '-' + project.branch + '-2.png')
-    console.log('\n\n - [' + project.name + '] 2 Saving screenshot from http://' + url + ' to `' + destination + '`')
-    return takeShot(
-      url,
-      destination,
-      null
-    )
-  })
 
   // --------------------
   // stop

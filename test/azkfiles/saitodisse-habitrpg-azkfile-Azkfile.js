@@ -12,7 +12,7 @@ systems({
     shell: "/bin/bash",
 
     // command: "node_modules/.bin/grunt run:dev",
-    command: "node_modules/.bin/grunt nodemon",
+    command: "node ./website/src/server.js",
 
     wait: { retry: 30, timeout: 1000 },
     mounts: {

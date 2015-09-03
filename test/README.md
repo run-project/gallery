@@ -14,17 +14,17 @@ Edit `projects-list.js`, then:
 ##### Start first time
 
 ```sh
-./_stop-clean-start-agent.sh && ./run-first-time.sh
+./linux_clean_docker_and_agent.sh && ./run-first-time.sh
 ```
 
 ##### Start reprovisioning
 
 ```sh
-./_stop-clean-start-agent.sh && ./run-restart-reprovision.sh
+./linux_clean_docker_and_agent.sh && ./run-restart-reprovision.sh
 ```
 
 ##### Clear all
 
 ```sh
-./_stop-clean-start-agent.sh && sudo ./_clear-buttons.sh
+./linux_clean_docker_and_agent.sh && sudo ./_clear-buttons.sh
 ```

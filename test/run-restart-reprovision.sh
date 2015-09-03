@@ -5,4 +5,4 @@
 # -------------
 echo 'starting'
 
-node `pwd`/app/runAll.js 'restart-reprovision'
+azk nvm node `pwd`/app/runAll.js 'restart-reprovision'
