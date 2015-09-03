@@ -1,6 +1,6 @@
 - [x] one list of user/repo/branch only
+- [x] work with VM
 - [ ] save all logs
-- [ ] chart without reprovision
-- [ ] work with VM
+- [ ] chart with: restart without reprovision
 - [ ] elapsed-keen: split each step provision and command
 - [ ] elapsed-keen: measure each system

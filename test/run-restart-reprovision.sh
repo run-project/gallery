@@ -1,6 +1,6 @@
 #! /bin/bash
 
-./_create_folders.sh
+./prepare.sh
 
 # -------------
 echo 'starting'
