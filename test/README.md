@@ -20,12 +20,25 @@ npm install
 
 ##### Start first time (clean install)
 
+Run this the first time.
+
+- download repo to `/tmp/buttons` folder
+- clear any persistent data
+- install app
+
 ```sh
 npm install
-./run-first-time.sh
+./run-first-start.sh
 ```
 
+- go check result in browser: `gallery/test/keen-io-charts.html`
+
 ##### Restarting and reprovisioning
+
+Just restart and reprovision.
+
+- do not clear any persistent/sync data files
+- stop and start all systems
 
 ```sh
 ./run-restart-reprovision.sh

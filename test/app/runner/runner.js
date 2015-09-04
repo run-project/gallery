@@ -29,7 +29,7 @@ module.exports = {
         if (err) {
           return reject(err)
         } else {
-          return resolve(err)
+          return resolve(res)
         }
       })
     })

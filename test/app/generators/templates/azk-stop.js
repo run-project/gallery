@@ -1,5 +1,4 @@
 var createScript = require('../create-script')
-var path = require('path')
 
 module.exports = function (opts) {
   return createScript([
@@ -15,9 +14,6 @@ module.exports = function (opts) {
     'azk stop',
     ''
   ].join('\n'),
-
-  path.join(__dirname, '../../build/scripts/stop/',
-    opts.repoOwner + '-' + opts.name + '-' + opts.branch + '.sh'),
-
+  __filename,
   opts)
 }
