@@ -17,9 +17,8 @@ Keen.ready(function (){
 
   client.run(query, function(err, res){
     if (err) {
-      chart.error(err.message);
+      console.error(err.message);
     } else {
-      // console.log(JSON.stringify(res.result))
 
       $(function () {
         var data = res.result;
@@ -63,11 +62,12 @@ Keen.ready(function (){
 
             // calculate avarage elapsed time
             var all_elapsed = R.map(function(x) { return x.elapsed }, byExecutionPath);
+
             var add = function(a, b) {
               return a + b / 2;
             };
             var avarage_value = R.reduce(add, 0, all_elapsed);
-            avarage_value = Math.floor10(avarage_value, 1);
+            avarage_value = Math.floor10(avarage_value, -1);
             _values.push(avarage_value);
           })
 

@@ -15,7 +15,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "all": "node ./app/runAll.js azk-start azk-restart-reprovision azk-restart"
+    "all": "node ./app/runAll.js azk-start azk-restart-reprovision azk-restart",
+    "restart": "node ./app/runAll.js azk-restart-reprovision azk-restart"
   },
   "keywords": [
     "azk"
