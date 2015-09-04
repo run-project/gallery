@@ -28,61 +28,13 @@ module.exports = function (project, opts) {
     'https://raw.githubusercontent.com/' + project.repoOwner + '/' + project.name + '/' + project.branch + '/Azkfile.js'
   )
 
-  // --------------------
-  // clear
-  .then(function () {
-    if (opts.execution_path === 'first-start') {
-      console.log('\n\n - [' + project.name + '] Cleaning...')
-      return runner.run({},
-      '/bin/bash',
-      path.join(__dirname, '/build/scripts/clear-project/' + full_project_name + '.sh'))
-    } else {
-      return true
-    }
-  })
-
   // ------------------
-  // run azk start URL
+  // run main test script
   .then(function () {
-    if (opts.execution_path === 'first-start') {
-    /**
-     * first-start
-     */
-      console.log('\n\n - [' + project.name + '] Starting from URL...')
-      return runner.run({},
-      '/bin/bash',
-      path.join(__dirname, '/build/scripts/azk-start/' + full_project_name + '.sh'))
-    } else if (opts.execution_path === 'restart-reprovision') {
-    /**
-     * restart-reprovision
-     */
-      console.log('\n\n - [' + project.name + '] Restarting and Reprovision...')
-      return fsAsync.exists('/tmp/buttons/' + project.name)
-      .then(function (exist) {
-        if (exist) {
-          return runner.run({},
-          '/bin/bash',
-          path.join(__dirname, '/build/scripts/azk-restart-reprovision/' + full_project_name + '.sh'))
-        } else {
-          throw new Error('/tmp/buttons/' + project.name + ' does not exist')
-        }
-      })
-    } else if (opts.execution_path === 'restart') {
-    /**
-     * restart
-     */
-      console.log('\n\n - [' + project.name + '] Restarting...')
-      return fsAsync.exists('/tmp/buttons/' + project.name)
-      .then(function (exist) {
-        if (exist) {
-          return runner.run({},
-          '/bin/bash',
-          path.join(__dirname, '/build/scripts/azk-restart/' + full_project_name + '.sh'))
-        } else {
-          throw new Error('/tmp/buttons/' + project.name + ' does not exist')
-        }
-      })
-    }
+    console.log('\n\n - [' + project.name + '] ' + opts.execution_path + '...')
+    return runner.run({},
+    '/bin/bash',
+    path.join(__dirname, '/build/scripts/' + opts.execution_path + '/' + full_project_name + '.sh'))
   })
 
   // --------------------------------------------
