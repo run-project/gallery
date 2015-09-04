@@ -29,7 +29,8 @@ Keen.ready(function (){
         /**/console.log('\n>>---------\n categories:\n', categories, '\n>>---------\n');/*-debug-*/
 
         var all_projects_names = R.map(function(x) { return x.name }, data);
-        var all_projects_names = R.uniq(all_projects_names)
+        all_projects_names = R.uniq(all_projects_names)
+        all_projects_names = all_projects_names.sort();
         /**/console.log('\n>>---------\n all_projects_names:\n', all_projects_names, '\n>>---------\n');/*-debug-*/
 
         var series = [];
