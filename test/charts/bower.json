@@ -1,0 +1,23 @@
+{
+  "name": "charts",
+  "version": "0.0.0",
+  "homepage": "https://github.com/saitodisse/azk-gallery",
+  "authors": [
+    "Julio Makdisse Saito <saitodisse@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "highcharts": "~4.1.8",
+    "jquery": "~2.1.4",
+    "keen-js": "~3.2.7",
+    "moment": "~2.10.6",
+    "ramda": "~0.17.1"
+  }
+}

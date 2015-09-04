@@ -46,8 +46,12 @@ Just restart and reprovision.
 
 ------------
 
-##### Clean azk and Docker in Linux
+##### Linux only: azk/docker cleanup
 
 ```sh
-./linux_clean_docker_and_agent.sh
+azk agent stop
+docker kill $(docker ps -q | tr "\r\n" " ")
+docker rm -f $(docker ps -f status=exited -q | tr "\r\n" " ")
+sudo service docker restart
+azk agent start
 ```

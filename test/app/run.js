@@ -88,6 +88,12 @@ module.exports = function (project, opts) {
   // --------------------------------------------
   // take a screen shot from web-site tree times
   .then(function () {
+
+    // calculate elapsed time
+    elapsed = (new Date()) - ini
+    elapsed = elapsed / 1000
+
+    // calculate elapsed time
     var url = project.name + '.dev.azk.io'
 
     var destination = path.join(screenshots_folder,
@@ -113,8 +119,6 @@ module.exports = function (project, opts) {
   // ----------------
   // save to keen.io
   .then(function () {
-    elapsed = (new Date()) - ini
-    elapsed = elapsed / 1000
     console.log('\n\n - [' + project.name + '] elapsed: ' + elapsed + ' seconds. Sending to Keen.io...')
     return runner.sendToKeen('azk-button-test', {
       execution_path: opts.execution_path,

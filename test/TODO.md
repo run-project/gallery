@@ -1,5 +1,6 @@
 - [x] one list of user/repo/branch only
 - [x] work with VM
+- [ ] clean all persistents at start because needs root password
 - [ ] save all logs
 - [ ] chart with: restart without reprovision
 - [ ] elapsed-keen: split each step provision and command
