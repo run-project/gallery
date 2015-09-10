@@ -12,8 +12,6 @@
   - node, cerebal, rethinkdb, ngrok
 - [Feedbin](#feedbin)
   - ruby, rails, clockwork, sidekiq, redis, postgres, elasticsearch, memcached
-- [Diaspora](#diaspora)
-  - ruby, rails, mysql, postgres, redis, sidekiq, mailcatcher
 - [Jekyll](#jekyll)
   - ruby
 - [lets-chat](#lets-chat)
@@ -70,15 +68,15 @@ azk start -o azukiapp-gallery/isomorphic500#azkfile
 
 ----------------------
 
-### [Discourse](https://github.com/azukiapp-gallery/discourse/tree/feature/azkfile)
+### [Discourse](https://github.com/azukiapp-gallery/discourse/tree/azkfile)
 
-<a href="https://github.com/azukiapp-gallery/discourse/tree/feature/azkfile"><img src="http://www.discourse.org/images/readme/newrelic-1-3-beta.png" alt="Discourse" title="Discourse" width="200" /></a>
+<a href="https://github.com/azukiapp-gallery/discourse/tree/azkfile"><img src="http://www.discourse.org/images/readme/newrelic-1-3-beta.png" alt="Discourse" title="Discourse" width="200" /></a>
 
 Discourse is the 100% open source discussion platform built for the next decade of the Internet. It works as: a mailing list, a discussion forum or a long-form chat room;
 Check [Azkfile.js](https://github.com/azukiapp-gallery/discourse/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/azukiapp-gallery/discourse/blob/azkfile/Azkfile.md) for more info.
 
 ```sh
-azk start -o azukiapp-gallery/discourse#feature/azkfile
+azk start -o azukiapp-gallery/discourse#azkfile
 ```
 
 
@@ -107,20 +105,6 @@ Check [Azkfile.js](https://github.com/azukiapp-gallery/feedbin/blob/azkfile/Azkf
 
 ```sh
 azk start -o azukiapp-gallery/feedbin#azkfile
-```
-
-
-----------------------
-
-### [Diaspora](https://github.com/azukiapp-gallery/diaspora/tree/azkfile)
-
-<a href="https://github.com/azukiapp-gallery/diaspora/tree/azkfile"><img src="https://raw.githubusercontent.com/azukiapp-gallery/diaspora/azkfile/app/assets/images/branding/logos/logo.png" alt="Diaspora" title="Diaspora" width="200" /></a>
-
-Distributed and contextual social networking.
-Check [Azkfile.js](https://github.com/azukiapp-gallery/diaspora/blob/azkfile/Azkfile.js)
-
-```sh
-azk start -o azukiapp-gallery/diaspora#azkfile
 ```
 
 
