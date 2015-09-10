@@ -81,7 +81,7 @@ Check [Azkfile.js](https://github.com/azukiapp-gallery/discourse/blob/azkfile/Az
 Simples list example using [cerebral controller](https://github.com/christianalfoni/cerebral). webpack/hot/dev-server enabled; production ready version on dist folder; exposes everything (app, DB) with ngrok;
 Check [Azkfile.js](https://github.com/azukiapp-gallery/task-cerebral/blob/master/Azkfile.js) and [Azkfile.md](https://github.com/azukiapp-gallery/task-cerebral/blob/master/Azkfile.md) for more info.
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azukiapp-gallery/task&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azukiapp-gallery/task-cerebral&ref=azkfile)
 
 ----------------------
 
@@ -96,14 +96,14 @@ Check [Azkfile.js](https://github.com/azukiapp-gallery/feedbin/blob/azkfile/Azkf
 
 ----------------------
 
-### [Jekyll](https://github.com/azukiapp-gallery/jekyll)
+### [Jekyll](https://github.com/azukiapp-gallery/jekyll/tree/gh-pages-azk)
 
-<a href="https://github.com/azukiapp-gallery/jekyll"><img src="https://raw.githubusercontent.com/azukiapp-gallery/jekyll/master/site/img/logo-2x.png" alt="Jekyll" title="Jekyll" width="200" /></a>
+<a href="https://github.com/azukiapp-gallery/jekyll/tree/gh-pages-azk"><img src="https://raw.githubusercontent.com/azukiapp-gallery/jekyll/master/site/img/logo-2x.png" alt="Jekyll" title="Jekyll" width="200" /></a>
 
 Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](http://pages.github.com/), which you can use to host sites right from your GitHub repositories.
-Check [Azkfile.js](https://github.com/azukiapp-gallery/jekyll/blob/master/Azkfile.js)
+Check [Azkfile.js](https://github.com/azukiapp-gallery/jekyll/blob/gh-pages-azk/Azkfile.js)
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azukiapp-gallery&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azukiapp-gallery/jekyll&ref=gh-pages-azk)
 
 ----------------------
 
@@ -158,7 +158,7 @@ Check [Azkfile.js](https://github.com/azukiapp-gallery/paperwork/blob/azkfile/Az
 Shout — The self-hosted web IRC client.
 Check [Azkfile.js](https://github.com/azukiapp-gallery/shout/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/azukiapp-gallery/shout/blob/azkfile/Azkfile.md) for more info.
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azukiapp-gallery&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azukiapp-gallery/shout&ref=azkfile)
 
 ----------------------
 
