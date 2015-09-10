@@ -28,7 +28,7 @@ Run this the first time.
 
 ```sh
 npm install
-./run-first-start.sh
+npm run all
 ```
 
 - go check result in browser: `gallery/test/keen-io-charts.html`
@@ -41,7 +41,7 @@ Just restart and reprovision.
 - stop and start all systems
 
 ```sh
-./run-restart-reprovision.sh
+npm run restart
 ```
 
 ------------
