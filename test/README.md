@@ -27,14 +27,14 @@ npm install
 - install app
 
 ```sh
-npm install
+azk agent start
 npm run all
 ```
 
 ###### Check result on charts
 
 ```sh
-cd test/charts
+cd charts
 bower install
 # open gallery/test/charts/charts-high.html
 ```
