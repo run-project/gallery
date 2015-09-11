@@ -1,4 +1,6 @@
-# test all from gallery
+# Testing all projects from gallery
+
+What this does?
 
 - download latest Azkfiles (easy to search)
 - stops azk agent
@@ -8,19 +10,17 @@
 - save screenshots to check if it is working
 - can kill/clean Docker containers
 
-#### test all button (may take too many minutes)
+#### Run all (may take too many minutes)
 
 Edit `projects-list.js`, then:
 
-##### npm install
+###### Prepare
 
 ```sh
 npm install
 ```
 
-##### Start first time (clean install)
-
-Run this the first time.
+###### First run (run this the first time of the day - clean install)
 
 - download repo to `/tmp/buttons` folder
 - clear any persistent data
@@ -31,7 +31,13 @@ npm install
 npm run all
 ```
 
-- go check result in browser: `gallery/test/keen-io-charts.html`
+###### Check result on charts
+
+```sh
+cd test/charts
+bower install
+# open gallery/test/charts/charts-high.html
+```
 
 ##### Restarting and reprovisioning
 
@@ -46,7 +52,7 @@ npm run restart
 
 ------------
 
-##### Linux only: azk/docker cleanup
+##### TIP: azk/docker cleanup (linux only)
 
 ```sh
 azk agent stop
