@@ -20,6 +20,9 @@
   - go, mysql, node, ruby, react, sass
 - [Cloudtunes](#cloudtunes)
   - python, tornado, celery, mongo, redis, coffeescript, sass, brunch, backbone.js, socketio, handlebars, compass, soundmanager
+- [Feedbin](#feedbin)
+    + RSS reader
+    + ruby, rails, clockwork, sidekiq, redis, postgres, elasticsearch, memcached
 
 <!-- /MarkdownTOC -->
 
@@ -140,4 +143,17 @@ Check [Azkfile.js](https://github.com/azk-button/cloudtunes/blob/azkfile/Azkfile
 `python, tornado, celery, mongo, redis, coffeescript, sass, brunch, backbone.js, socketio, handlebars, compass, soundmanager`
 
 [![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azk-button/cloudtunes&ref=azkfile)
+
+----------------------
+
+## [Feedbin](https://github.com/azk-button/feedbin/tree/azkfile)
+
+<a href="https://github.com/azk-button/feedbin/tree/azkfile"><img src="https://raw.github.com/feedbin/feedbin/master/app/assets/images/screenshots/_main.png" alt="Feedbin" title="Feedbin" width="600" /></a>
+
+Feedbin is a simple, fast and nice looking RSS reader.
+Check [Azkfile.js](https://github.com/azk-button/feedbin/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/azk-button/feedbin/blob/azkfile/Azkfile.md) for more info.
+
+`ruby, rails, clockwork, sidekiq, redis, postgres, elasticsearch, memcached`
+
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/azk-button.png)](http://run-stage.azk.io/start/?repo=azk-button/feedbin&ref=azkfile)
 
