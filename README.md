@@ -1,4 +1,14 @@
-# Gallery - azk buttons
+# "Run Project" button - Gallery
+
+This gallery lists up to date forks of popular repos from GitHub. It was created to illustrate the use of the "Run Project" button added to each of them.
+
+Click the button to quickly and safely install any of the projects on your local machine.
+
+The "Run Project" button employs `azk`, a lightweight open source orchestration tool that will automatically isolate and configure the application's environment for you.
+
+The addition of the button, references to its use on the README and the `azk` manifest file for each project are the only changes applied to these forks.
+
+Learn more about `azk` [here](https://github.com/azukiapp/azk).
 
 <!-- MarkdownTOC -->
 
