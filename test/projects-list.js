@@ -7,10 +7,10 @@ module.exports = {
     { name:   'stringer',        repoOwner: 'azk-button',    branch: 'azkfile' },
     { name:   'dillinger',       repoOwner: 'azk-button',    branch: 'azkfile' },
     { name:   'regexr',          repoOwner: 'azk-button',    branch: 'azkfile' },
-    { name:   'feedbin',         repoOwner: 'azk-button',    branch: 'azkfile' },
     { name:   'huginn',          repoOwner: 'azk-button',    branch: 'azkfile' },
 
     // :: alphas
+    // { name:   'feedbin',         repoOwner: 'azk-button',    branch: 'azkfile' },
     // { name:   'azkdemo',         repoOwner: 'azukiapp',      branch: 'final'   },
     // { name:   'task-cerebral',   repoOwner: 'azk-button',    branch: 'master'  },
     // { name:   'isomorphic500',   repoOwner: 'azk-button',    branch: 'azkfile' },
