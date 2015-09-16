@@ -37,7 +37,7 @@ Learn more about `azk` [here](https://github.com/azukiapp/azk).
 
 ## [Stringer](https://github.com/run-project/stringer/tree/azkfile)
 
-<a href="https://github.com/run-project/stringer/tree/azkfile"><img src="https://raw.githubusercontent.com/run-project/stringer/azkfile/screenshots/feed.png" alt="stringer" title="stringer" width="600" /></a>
+<a href="https://github.com/run-project/stringer/tree/azkfile"><img src="./images/stringer.png" alt="stringer" title="stringer" width="600" /></a>
 
 A self-hosted, anti-social RSS reader.
 Check [Azkfile.js](https://github.com/run-project/stringer/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/stringer/blob/azkfile/Azkfile.md) for more info.
