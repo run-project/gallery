@@ -76,7 +76,7 @@ Check [Azkfile.js]() and [Azkfile.md](https://github.com/run-project/huginn/blob
 
 ## [Regexr](https://github.com/run-project/regexr/tree/azkfile)
 
-<a href="https://github.com/run-project/regexr/tree/azkfile"><img src="./images/regexr.png" alt="regexr" title="regexr" width="600" /></a>
+[![regexr](./images/regexr.png)](https://github.com/run-project/regexr/tree/azkfile)
 
 RegExr is a HTML/JS based tool for creating, testing, and learning about Regular Expressions.
 Check [Azkfile.js](https://github.com/run-project/regexr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/regexr/blob/azkfile/Azkfile.md) for more info.
