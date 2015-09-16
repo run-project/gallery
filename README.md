@@ -100,15 +100,15 @@ Check [Azkfile.js](https://github.com/run-project/shout/blob/azkfile/Azkfile.js)
 
 ----------------------
 
-## [Reportr](https://github.com/run-project/dashboard/tree/azkfile)
+## [Reportr](https://github.com/run-project/reportr/tree/azkfile)
 
-<a href="https://github.com/run-project/dashboard/tree/azkfile"><img src="https://raw.githubusercontent.com/run-project/dashboard/azkfile/preview.png" alt="dashboard" title="dashboard" width="600" /></a>
+[![reportr](./images/reportr.png)](https://github.com/run-project/reportr/tree/azkfile)
 
 Your life's personal dashboard. [http://www.reportr.io](http://www.reportr.io)
-Check [Azkfile.js](https://github.com/run-project/dashboard/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/dashboard/blob/azkfile/Azkfile.md) for more info.
+Check [Azkfile.js](https://github.com/run-project/reportr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/reportr/blob/azkfile/Azkfile.md) for more info.
 
 `node, mongo, redis, express, kue`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/dashboard&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/reportr&ref=azkfile)
 
 ----------------------
