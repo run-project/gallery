@@ -1,0 +1,16 @@
+{
+  "name": "azk-gallery-test-charts",
+  "version": "0.0.1",
+  "description": "charts for gallery projects",
+  "main": "projects-list.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.5.2"
+  },
+  "scripts": {},
+  "keywords": [
+    "azk"
+  ],
+  "author": "saitodisse",
+  "license": "ISC"
+}
