@@ -50,7 +50,7 @@ Check [Azkfile.js](https://github.com/run-project/stringer/blob/azkfile/Azkfile.
 
 ## [Dillinger](https://github.com/run-project/dillinger/tree/azkfile)
 
-<a href="https://github.com/run-project/dillinger/tree/azkfile"><img src="./images/dillinger.png" alt="dillinger" title="dillinger" width="600" /></a>
+[![dillinger](./images/dillinger.png)](https://github.com/run-project/dillinger/tree/azkfile)
 
 The last Markdown editor, ever.
 Check [Azkfile.js](https://github.com/run-project/dillinger/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/dillinger/blob/azkfile/Azkfile.md) for more info.
@@ -89,7 +89,7 @@ Check [Azkfile.js](https://github.com/run-project/regexr/blob/azkfile/Azkfile.js
 
 ## [Shout](https://github.com/run-project/shout/tree/azkfile)
 
-<a href="https://github.com/run-project/shout/tree/azkfile"><img src="./images/shout.png" alt="shout" title="shout" width="600" /></a>
+[![shout](./images/shout.png)](https://github.com/run-project/shout/tree/azkfile)
 
 Shout — The self-hosted web IRC client.
 Check [Azkfile.js](https://github.com/run-project/shout/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/shout/blob/azkfile/Azkfile.md) for more info.
