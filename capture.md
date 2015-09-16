@@ -1,21 +1,22 @@
+# Screenshot guidelines
 
-# Instruções de como capturar as telas da galeria
+## Requirements
 
-Observações:
+The screenshots must be taken on:
 
-- As telas devem ser capturadas obrigatoriamente no Mac OS X com o Navegador Chrome;
-- Criei um profile separado para isso, sem nehuma extensão ou aba de bookmarks;
+- Mac OS X;
+- Google Chrome, using a profile named `azukiapp`;
 
-Passos:
+## Steps
 
-1 - Instale a extensão: https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh/related;
+1- Install [window-resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh/related) extension for Google Chrome;
 
-2 - Adicione nas opções da extensão "Window Resizer", uma "custom resolution", com o nome de "run-project-capture" e com as dimensões de "1054x626";
+2- Add a new custom resolution into "Window Resizer" options, named "run-project-capture" with dimensions "1054x626";
 
-3 - Deixe apenas uma aba aberta e escolha a resolução "run-project-capture";
+3- Leave only one open tab and change window dimensions to "run-project-capture" with "Window Resizer";
 
-4 - Abra o projeto que você deseja captura nessa aba;
+4- Open the URL of the project you want to take a screenshot;
 
-4 - Aperte `cmd+shit+4` + `space` e clique sobre a tela que você deseja capturar;
+5- Press `⌘ Cmd` + `⇧ Shift` + `4` + `␣ Space` and click on the screen you want to capture;
 
-5 - Pronto;
+6- Done!
