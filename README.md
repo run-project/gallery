@@ -40,7 +40,6 @@ Learn more about `azk` [here](https://github.com/azukiapp/azk).
 [![stringer](./images/stringer.png)](https://github.com/run-project/stringer)
 
 A self-hosted, anti-social RSS reader.
-Check [Azkfile.js](https://github.com/run-project/stringer/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/stringer/blob/azkfile/Azkfile.md) for more info.
 
 `ruby, postgres, sinatra`
 
@@ -53,7 +52,6 @@ Check [Azkfile.js](https://github.com/run-project/stringer/blob/azkfile/Azkfile.
 [![dillinger](./images/dillinger.png)](https://github.com/run-project/dillinger)
 
 The last Markdown editor, ever.
-Check [Azkfile.js](https://github.com/run-project/dillinger/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/dillinger/blob/azkfile/Azkfile.md) for more info.
 
 `node, express, ejs, angular, markdown-it`
 
@@ -65,8 +63,7 @@ Check [Azkfile.js](https://github.com/run-project/dillinger/blob/azkfile/Azkfile
 
 [![huginn](./images/huginn.png)](https://github.com/run-project/huginn)
 
-Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn's Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.
-Check [Azkfile.js]() and [Azkfile.md](https://github.com/run-project/huginn/blob/azkfile/Azkfile.md) for more info.
+Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn's Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data. You do.
 
 `ruby, rails, mysql`
 
@@ -79,7 +76,6 @@ Check [Azkfile.js]() and [Azkfile.md](https://github.com/run-project/huginn/blob
 [![regexr](./images/regexr.png)](https://github.com/run-project/regexr)
 
 RegExr is a HTML/JS based tool for creating, testing, and learning about Regular Expressions.
-Check [Azkfile.js](https://github.com/run-project/regexr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/regexr/blob/azkfile/Azkfile.md) for more info.
 
 `node, ruby, compass, sass`
 
@@ -92,7 +88,6 @@ Check [Azkfile.js](https://github.com/run-project/regexr/blob/azkfile/Azkfile.js
 [![shout](./images/shout.png)](https://github.com/run-project/shout)
 
 Shout — The self-hosted web IRC client.
-Check [Azkfile.js](https://github.com/run-project/shout/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/shout/blob/azkfile/Azkfile.md) for more info.
 
 `node, express, socket.io, slate-irc`
 
@@ -105,10 +100,17 @@ Check [Azkfile.js](https://github.com/run-project/shout/blob/azkfile/Azkfile.js)
 [![reportr](./images/reportr.png)](https://github.com/run-project/reportr)
 
 Your life's personal dashboard. [http://www.reportr.io](http://www.reportr.io)
-Check [Azkfile.js](https://github.com/run-project/reportr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/reportr/blob/azkfile/Azkfile.md) for more info.
 
 `node, mongo, redis, express, kue`
 
 [![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/reportr&ref=azkfile)
 
 ----------------------
+
+## License
+
+"Azuki", "azk" and the Azuki logo are copyright (c) 2013-2015 Azuki Serviços de Internet LTDA.
+
+**azk** source code is released under Apache 2 License.
+
+Check LEGAL and LICENSE files for more information.
