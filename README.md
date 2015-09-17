@@ -43,7 +43,7 @@ A self-hosted, anti-social RSS reader.
 
 `ruby, postgres, sinatra`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/stringer&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/stringer)
 
 ----------------------
 
@@ -55,7 +55,7 @@ The last Markdown editor, ever.
 
 `node, express, ejs, angular, markdown-it`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/dillinger&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/dillinger)
 
 ----------------------
 
@@ -67,7 +67,7 @@ Huginn is a system for building agents that perform automated tasks for you onli
 
 `ruby, rails, mysql`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/huginn&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/huginn)
 
 ----------------------
 
@@ -79,7 +79,7 @@ RegExr is a HTML/JS based tool for creating, testing, and learning about Regular
 
 `node, ruby, compass, sass`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/regexr&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/regexr)
 
 ----------------------
 
@@ -91,7 +91,7 @@ Shout — The self-hosted web IRC client.
 
 `node, express, socket.io, slate-irc`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/shout&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/shout)
 
 ----------------------
 
@@ -103,7 +103,7 @@ Your life's personal dashboard. [http://www.reportr.io](http://www.reportr.io)
 
 `node, mongo, redis, express, kue`
 
-[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/reportr&ref=azkfile)
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](http://run.azk.io/start/?repo=run-project/reportr)
 
 ----------------------
 
