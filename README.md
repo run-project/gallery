@@ -35,9 +35,9 @@ Learn more about `azk` [here](https://github.com/azukiapp/azk).
 
 ----------------------
 
-## [Stringer](https://github.com/run-project/stringer/tree/azkfile)
+## [Stringer](https://github.com/run-project/stringer)
 
-[![stringer](./images/stringer.png)](https://github.com/run-project/stringer/tree/azkfile)
+[![stringer](./images/stringer.png)](https://github.com/run-project/stringer)
 
 A self-hosted, anti-social RSS reader.
 Check [Azkfile.js](https://github.com/run-project/stringer/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/stringer/blob/azkfile/Azkfile.md) for more info.
@@ -48,9 +48,9 @@ Check [Azkfile.js](https://github.com/run-project/stringer/blob/azkfile/Azkfile.
 
 ----------------------
 
-## [Dillinger](https://github.com/run-project/dillinger/tree/azkfile)
+## [Dillinger](https://github.com/run-project/dillinger)
 
-[![dillinger](./images/dillinger.png)](https://github.com/run-project/dillinger/tree/azkfile)
+[![dillinger](./images/dillinger.png)](https://github.com/run-project/dillinger)
 
 The last Markdown editor, ever.
 Check [Azkfile.js](https://github.com/run-project/dillinger/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/dillinger/blob/azkfile/Azkfile.md) for more info.
@@ -61,9 +61,9 @@ Check [Azkfile.js](https://github.com/run-project/dillinger/blob/azkfile/Azkfile
 
 ----------------------
 
-## [Huginn](https://github.com/run-project/huginn/tree/azkfile)
+## [Huginn](https://github.com/run-project/huginn)
 
-[![huginn](./images/huginn.png)](https://github.com/run-project/huginn/tree/azkfile)
+[![huginn](./images/huginn.png)](https://github.com/run-project/huginn)
 
 Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn's Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.
 Check [Azkfile.js]() and [Azkfile.md](https://github.com/run-project/huginn/blob/azkfile/Azkfile.md) for more info.
@@ -74,9 +74,9 @@ Check [Azkfile.js]() and [Azkfile.md](https://github.com/run-project/huginn/blob
 
 ----------------------
 
-## [Regexr](https://github.com/run-project/regexr/tree/azkfile)
+## [Regexr](https://github.com/run-project/regexr)
 
-[![regexr](./images/regexr.png)](https://github.com/run-project/regexr/tree/azkfile)
+[![regexr](./images/regexr.png)](https://github.com/run-project/regexr)
 
 RegExr is a HTML/JS based tool for creating, testing, and learning about Regular Expressions.
 Check [Azkfile.js](https://github.com/run-project/regexr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/regexr/blob/azkfile/Azkfile.md) for more info.
@@ -87,9 +87,9 @@ Check [Azkfile.js](https://github.com/run-project/regexr/blob/azkfile/Azkfile.js
 
 ----------------------
 
-## [Shout](https://github.com/run-project/shout/tree/azkfile)
+## [Shout](https://github.com/run-project/shout)
 
-[![shout](./images/shout.png)](https://github.com/run-project/shout/tree/azkfile)
+[![shout](./images/shout.png)](https://github.com/run-project/shout)
 
 Shout — The self-hosted web IRC client.
 Check [Azkfile.js](https://github.com/run-project/shout/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/shout/blob/azkfile/Azkfile.md) for more info.
@@ -100,9 +100,9 @@ Check [Azkfile.js](https://github.com/run-project/shout/blob/azkfile/Azkfile.js)
 
 ----------------------
 
-## [Reportr](https://github.com/run-project/reportr/tree/azkfile)
+## [Reportr](https://github.com/run-project/reportr)
 
-[![reportr](./images/reportr.png)](https://github.com/run-project/reportr/tree/azkfile)
+[![reportr](./images/reportr.png)](https://github.com/run-project/reportr)
 
 Your life's personal dashboard. [http://www.reportr.io](http://www.reportr.io)
 Check [Azkfile.js](https://github.com/run-project/reportr/blob/azkfile/Azkfile.js) and [Azkfile.md](https://github.com/run-project/reportr/blob/azkfile/Azkfile.md) for more info.
