@@ -1,28 +1,27 @@
 /**
- * Documentation: http://docs.azk.io/Azkfile.js
+ * azk's documentation: http://docs.azk.io/Azkfile.js
  */
-// Adds the systems that shape your system
 systems({
-  stringer: {
-    // Dependent systems
-    depends: ["postgres"],
-    // More images:  http://images.azk.io
-    image: {"docker": "azukiapp/ruby:2.0"},
+
+  // Rails
+  lobsters: {
+    depends: ["mysql"],
+    image: {"docker": "azukiapp/ruby:2.1"},
+
     // Steps to execute before running instances
     provision: [
       "bundle install --path /azk/bundler",
+      "bundle exec rake db:create RACK_ENV=production",
+      // "bundle exec rake db:schema:load RACK_ENV=production",
       "bundle exec rake db:migrate RACK_ENV=production",
+      "echo \"Lobsters::Application.config.secret_key_base = '$(bundle exec rake secret)'\" > config/initializers/secret_token.rb",
+      "bundle exec rake db:seed RACK_ENV=production",
     ],
     workdir: "/azk/#{manifest.dir}",
     shell: "/bin/bash",
 
-    // command: "bundle exec rackup config.ru --pid /tmp/ruby.pid --port $HTTP_PORT --host 0.0.0.0",
-    command: [
-      // fetch now!
-      "bundle exec rake fetch_feeds",
-      // start server
-      "bundle exec unicorn -p $HTTP_PORT -c ./config/unicorn.rb",
-    ].join(";"),
+    // command: "bundle exec unicorn -p $HTTP_PORT -c ./config/unicorn.rb",
+    command: "bundle exec rails server -p $HTTP_PORT -P /tmp/ruby.pid -b 0.0.0.0",
 
     wait: 20,
     mounts: {
@@ -35,59 +34,44 @@ systems({
     scalable: {"default": 1},
     http: {
       domains: [
-        "#{system.name}.#{azk.default_domain}", // default azk
-        '#{process.env.AZK_HOST_IP}'            // used if deployed
+        '#{env.HOST_DOMAIN}',                   // used only if deployed
+        '#{env.HOST_IP}',                       // used only if deployed
+        "#{system.name}.#{azk.default_domain}", // default azk domain
       ]
     },
     ports: {
-      // exports global variables
       http: "3000/tcp",
     },
     envs: {
-      // Make sure that the PORT value is the same as the one
-      // in ports/http below, and that it's also the same
-      // if you're setting it in a .env file
       RUBY_ENV: "production",
       BUNDLE_APP_CONFIG: "/azk/bundler",
       APP_URL: "#{system.name}.#{azk.default_domain}",
       //$ openssl rand -hex 20
-      SECRET_TOKEN: "d108461ed31016b360479e074a4ae4fefff1d8eb",
+      SECRET_TOKEN: "d108461ed31016b360479e074a4ae4fefff1d8eb"
     },
   },
-  postgres: {
-    // Dependent systems
+
+  mysql: {
     depends: [],
-    // More images:  http://images.azk.io
-    image: {"docker": "azukiapp/postgres:9.3"},
+    image: {"docker": "azukiapp/mysql:5.6"},
     shell: "/bin/bash",
-    wait: 20,
+    wait: 25,
     mounts: {
-      '/var/lib/postgresql/data': persistent("postgresql"),
-      '/var/log/postgresql': path("./log/postgresql"),
+      "/var/lib/mysql": persistent("#{manifest.dir}/mysql"),
     },
     ports: {
-      // exports global variables
-      data: "5432/tcp",
+      data: "3306/tcp",
     },
     envs: {
-      // set instances variables
-      POSTGRESQL_USER: "stringer",
-      POSTGRESQL_PASS: "EDIT_ME",
-      POSTGRESQL_DB: "stringer_live",
+      MYSQL_ROOT_PASSWORD: "mysecretpassword",
+      MYSQL_USER: "azk",
+      MYSQL_PASS: "azk",
+      MYSQL_DATABASE: "#{manifest.dir}_development",
     },
     export_envs: {
       // check this gist to configure your database
       // https://gist.github.com/gullitmiranda/62082f2e47c364ef9617
-      DATABASE_URL: "postgres://#{envs.POSTGRESQL_USER}:#{envs.POSTGRESQL_PASS}@#{net.host}:#{net.port.data}/${envs.POSTGRESQL_DB}",
-
-      // from https://github.com/saitodisse/stringer/blob/master/docs/VPS.md
-      STRINGER_DATABASE: "${envs.POSTGRESQL_DB}",
-      STRINGER_DATABASE_USERNAME: "${envs.POSTGRESQL_USER}",
-      STRINGER_DATABASE_PASSWORD: "${envs.POSTGRESQL_PASS}",
-      STRINGER_DATABASE_HOST: "#{net.host}",
-      STRINGER_DATABASE_PORT: "#{net.port.data}",
-
-      RACK_ENV: "production",
+      DATABASE_URL: "mysql2://#{envs.MYSQL_USER}:#{envs.MYSQL_PASS}@#{net.host}:#{net.port.data}/${envs.MYSQL_DATABASE}",
     },
   },
 
@@ -103,7 +87,7 @@ systems({
       // that way you can connect with:
       // $ ssh git@REMOTE.IP
       // $ bash
-      "/azk/deploy/.ssh": path("#{process.env.HOME}/.ssh")
+      "/azk/deploy/.ssh": path("#{env.HOME}/.ssh")
     },
 
     // this is not a server
