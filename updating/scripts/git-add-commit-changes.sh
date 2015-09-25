@@ -9,11 +9,11 @@ do
   cd "$BUTTONS_FOLDER/$var"
 
   echo ""
-  echo " $ git checkout azkfile"
-  git checkout azkfile
+  echo " $ git add . -A"
+  git add . -A
 
   echo ""
-  echo " $ git pull origin azkfile"
-  git pull origin azkfile
+  echo " $ git commit -m'[azk] Azkfile.js updated'"
+  git commit -m'[azk] Azkfile.js updated'
 
 done

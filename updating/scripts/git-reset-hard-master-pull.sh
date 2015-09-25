@@ -9,22 +9,18 @@ do
   cd "$BUTTONS_FOLDER/$var"
 
   echo ""
-  echo " $ git fetch --all --prune"
-  git fetch --all --prune
+  echo " $ git status"
+  git status
 
   echo ""
   echo " $ git checkout master"
   git checkout master
 
   echo ""
-  echo " $ git pull upstream master"
-  git pull upstream master
+  echo " $ git reset origin/master --hard"
+  git reset origin/master --hard
 
   echo ""
-  echo " $ git push origin master"
-  git push origin master
-
-  echo ""
-  echo " $ git checkout azkfile"
-  git checkout azkfile
+  echo " $ git pull origin master"
+  git pull origin master
 done

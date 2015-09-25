@@ -9,10 +9,6 @@ do
   cd "$BUTTONS_FOLDER/$var"
 
   echo ""
-  echo " $ git checkout master"
-  git checkout master
-
-  echo ""
-  echo " $ git pull upstream/master"
-  git pull upstream/master
+  echo " $ azk stop"
+  azk stop
 done

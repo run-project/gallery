@@ -13,6 +13,7 @@ do
   git checkout master
 
   echo ""
-  echo " $ git pull upstream/master"
-  git pull upstream/master
+  echo " $ git push origin master"
+  git push origin master
+
 done
