@@ -17,6 +17,10 @@ do
   git checkout master
 
   echo ""
+  echo " $ git fetch --all --prune"
+  git fetch --all --prune
+
+  echo ""
   echo " $ git reset origin/master --hard"
   git reset origin/master --hard
 

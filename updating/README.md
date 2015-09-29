@@ -70,18 +70,6 @@ Check if all Azkfiles are still valid
 
 ## Updating from upstream
 
-#### 1. Set the buttons folder
-
-```sh
-export BUTTONS_FOLDER=~/_git/button-projects
-```
-
-#### 2. Clone all projects and set their original `upstream` branch
-
-```sh
-./clone-all-set-upstreams.sh
-```
-
 #### 3. (!) Reset --hard `master` to `origin/master`
 
 ```sh
