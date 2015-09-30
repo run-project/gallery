@@ -2,12 +2,48 @@ module.exports = {
 
   projects: [
     // :: official
-    { name:   'shout',           repoOwner: 'run-project',    branch: 'master' },
-    { name:   'dashboard',       repoOwner: 'run-project',    branch: 'master' },
-    { name:   'stringer',        repoOwner: 'run-project',    branch: 'master' },
-    { name:   'dillinger',       repoOwner: 'run-project',    branch: 'master' },
-    { name:   'regexr',          repoOwner: 'run-project',    branch: 'master' },
-    { name:   'huginn',          repoOwner: 'run-project',    branch: 'master' },
+    {
+      name: 'shout',
+      repoOwner: 'run-project',
+      branch: 'master',
+      upstream: 'git@github.com:erming/shout.git'
+    },
+
+    {
+      name: 'dashboard',
+      repoOwner: 'run-project',
+      branch: 'master',
+      upstream: 'git@github.com:Reportr/dashboard.git'
+    },
+
+    {
+      name: 'stringer',
+      repoOwner: 'run-project',
+      branch: 'master',
+      upstream: 'git@github.com:swanson/stringer.git'
+    },
+
+    {
+      name: 'dillinger',
+      repoOwner: 'run-project',
+      branch: 'master',
+      upstream: 'git@github.com:joemccann/dillinger.git'
+    },
+
+    {
+      name: 'regexr',
+      repoOwner: 'run-project',
+      branch: 'master',
+      upstream: 'git@github.com:gskinner/regexr.git'
+    },
+
+    {
+      name: 'huginn',
+      repoOwner: 'run-project',
+      branch: 'master',
+      upstream: 'git@github.com:cantino/huginn.git'
+    },
+
 
     // :: beta
     // { name:   'lobsters',        repoOwner: 'saitodisse',    branch: 'master' },
