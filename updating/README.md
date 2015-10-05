@@ -101,6 +101,22 @@ azk restart -Rovv
 azk stop
 ```
 
+#### 6. Last full check
+
+```sh
+# must have no conflicts, nothing to commit
+./scripts/azk-status.sh
+
+# may take some time - at end all must be green
+./scripts/azk-reprovision.sh
+
+# fast, open all in browser
+./scripts/azk-start-and-open.sh
+
+# stop all
+./scripts/azk-stop.sh
+```
+
 #### 7. Push to github
 
 ```
