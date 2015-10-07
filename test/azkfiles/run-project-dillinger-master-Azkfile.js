@@ -1,19 +1,14 @@
 /* globals path, systems, sync, persistent */
 /* eslint camelcase: [2, {properties: "never"}] */
 /* eslint comma-dangle: [0, {properties: "never"}] */
-
-/**
- * see Azkfile.md for more info
- */
 systems({
-  'dillinger': {
-    // Dependent systems
+  dillinger: {
     depends: [],
-    image: {'docker': 'azukiapp/node:0.10'},
+    image: { docker: 'azukiapp/node:0.12' },
     provision: [
-      'npm install -d',
+      'npm install',
       'npm install gulp',
-      'node_modules/.bin/gulp build --prod &',
+      'node_modules/.bin/gulp build --prod',
     ],
     workdir: '/azk/#{manifest.dir}',
     shell: '/bin/bash',
@@ -24,12 +19,12 @@ systems({
       '/azk/#{manifest.dir}/node_modules': persistent('#{manifest.dir}/node_modules'),
       '/azk/#{manifest.dir}/bower_components': persistent('#{manifest.dir}/bower_components'),
     },
-    scalable: {'default': 1},
+    scalable: { default: 1 },
     http: {
       domains: [
         '#{env.HOST_DOMAIN}',                   // used if deployed
         '#{env.HOST_IP}',                       // used if deployed
-        "#{system.name}.#{azk.default_domain}", // default azk domain
+        '#{system.name}.#{azk.default_domain}', // default azk domain
       ]
     },
     ports: {
@@ -50,36 +45,36 @@ systems({
   /// deploy
   //////////
   deploy: {
-    image: {"docker": "azukiapp/deploy-digitalocean"},
+    image: { docker: 'azukiapp/deploy-digitalocean' },
     mounts: {
 
       // your files on remote machine
       // will be on /home/git folder
-      "/azk/deploy/src":  path("."),
+      '/azk/deploy/src':  path('.'),
 
       // will use your public key on server
       // that way you can connect with:
       // $ ssh git@REMOTE.IP
       // $ bash
-      "/azk/deploy/.ssh": path("#{env.HOME}/.ssh")
+      '/azk/deploy/.ssh': path('#{env.HOME}/.ssh')
     },
 
     // this is not a server
     // just call with azk shell deploy
-    scalable: {"default": 0, "limit": 0},
+    scalable: { default: 0, limit: 0 },
 
     envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'azkfile',
+      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
       AZK_RESTART_COMMAND: 'azk restart dillinger -Rvv',
       RUN_SETUP: 'true',
       RUN_CONFIGURE: 'true',
       RUN_DEPLOY: 'true',
     }
   },
-  "fast-deploy": {
+  'fast-deploy': {
     extends: 'deploy',
     envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'azkfile',
+      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
       AZK_RESTART_COMMAND: 'azk restart dillinger -Rvv',
       RUN_SETUP: 'false',
       RUN_CONFIGURE: 'false',

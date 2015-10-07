@@ -1,68 +1,63 @@
-/* globals systems path sync persistent */
+/* globals systems path persistent */
 /* eslint camelcase: [2, {properties: "never"}] */
 /* eslint comma-dangle: [0, {properties: "never"}] */
-
-/* see Azkfile.md */
 systems({
-
   dashboard: {
     depends: ['mongo', 'redis'],
-    image: {"docker": "azukiapp/node:0.10"},
+    image: { docker: 'azukiapp/node:0.10' },
     provision: [
-      "npm install",
-      // "npm run grunt",
-      // "node_modules/.bin/grunt",
+      'npm install'
     ],
-    workdir: "/azk/#{system.name}",
-    shell: "/bin/bash",
+    workdir: '/azk/#{system.name}',
+    shell: '/bin/bash',
 
-    command: "node bin/web.js",
-    wait: { retry: 30, timeout: 1000 },
+    command: 'node bin/web.js',
+    wait: 30,
     mounts: {
-      "/azk/#{system.name}": path("."),
-      "/azk/#{system.name}/node_modules": persistent("#{system.name}/node_modules"),
-      "/azk/#{system.name}/public/src/vendors": persistent("#{system.name}/public/src/vendors"),
+      '/azk/#{system.name}': path('.'),
+      '/azk/#{system.name}/node_modules': persistent('#{system.name}/node_modules'),
+      '/azk/#{system.name}/public/src/vendors': persistent('#{system.name}/public/src/vendors'),
     },
-    scalable: {"default": 1},
+    scalable: { default: 1 },
     http: {
       domains: [
         '#{env.HOST_DOMAIN}',                   // used if deployed
         '#{env.HOST_IP}',                       // used if deployed
-        "#{system.name}.#{azk.default_domain}", // default azk domain
+        '#{system.name}.#{azk.default_domain}', // default azk domain
       ]
     },
     ports: {
-      http: "5000/tcp"
+      http: '5000/tcp'
     },
     envs: {
-      DOMAIN: "#{system.name}.#{azk.default_domain}",
-      HOST: "0.0.0.0",
-      PORT: "5000",
+      DOMAIN: '#{system.name}.#{azk.default_domain}',
+      HOST: '0.0.0.0',
+      PORT: '5000',
 
       // Port for running the application, default is 5000
-      PORT: "5000",
+      PORT: '5000',
 
       // Url for the mongoDB database
       // already get from mongo dependency
-      // MONGODB_URL: "",
+      // MONGODB_URL: '',
 
       // (Optional) Url for a redis database when using worker mode
       // already get from redis dependency
-      // REDIS_URL: "",
+      // REDIS_URL: '',
 
       // Username for authentication
-      AUTH_USERNAME: "",
+      AUTH_USERNAME: '',
 
       // Password for authentication
-      AUTH_PASSWORD: "",
+      AUTH_PASSWORD: '',
 
-      MAIL_SERVICE: "",
-      MAIL_USERNAME: "",
-      MAIL_PASSWORD: "",
-      MAIL_FROM: "",
-      TWILIO_SID: "",
-      TWILIO_TOKEN: "",
-      TWILIO_FROM: "",
+      MAIL_SERVICE: '',
+      MAIL_USERNAME: '',
+      MAIL_PASSWORD: '',
+      MAIL_FROM: '',
+      TWILIO_SID: '',
+      TWILIO_TOKEN: '',
+      TWILIO_FROM: '',
     },
   },
 
@@ -72,80 +67,80 @@ systems({
     http: null,
     ports: null,
     wait: undefined,
-    image: {"docker": "azukiapp/node:0.10"},
-    command: "node bin/worker.js",
+    image: { docker: 'azukiapp/node:0.10' },
+    command: 'node bin/worker.js',
   },
 
   redis: {
-    image: {"docker": "redis"},
+    image: { docker: 'redis' },
     ports: {
-      data: "6379/tcp"
+      data: '6379/tcp'
     },
     export_envs: {
-      REDIS_HOST: "#{net.host}",
-      REDIS_PORT: "#{net.port.data}",
-      REDIS_URL: "redis://#{net.host}:#{net.port.data}",
-      OPENREDIS_URL: "redis://#{net.host}:#{net.port.data}",
-      DISCOURSE_REDIS_HOST: "#{net.host}",
-      DISCOURSE_REDIS_PORT: "#{net.port.data}"
+      REDIS_HOST: '#{net.host}',
+      REDIS_PORT: '#{net.port.data}',
+      REDIS_URL: 'redis://#{net.host}:#{net.port.data}',
+      OPENREDIS_URL: 'redis://#{net.host}:#{net.port.data}',
+      DISCOURSE_REDIS_HOST: '#{net.host}',
+      DISCOURSE_REDIS_PORT: '#{net.port.data}'
     }
   },
 
   mongo: {
-    image : { docker: "azukiapp/mongodb" },
+    image : { docker: 'azukiapp/mongodb' },
     scalable: false,
-    wait: { retry: 80, timeout: 1000 },
+    wait: 80,
     // Mounts folders to assigned paths
     mounts: {
       // equivalent persistent_folders
       '/data/db': persistent('mongodb-#{manifest.dir}'),
     },
     ports: {
-      http: "28017/tcp",
-      data: "27017:27017/tcp",
+      http: '28017/tcp',
+      data: '27017:27017/tcp',
     },
     http      : {
       // mongodb.azk.dev
-      domains: [ "#{manifest.dir}-#{system.name}.#{azk.default_domain}" ],
+      domains: [ '#{manifest.dir}-#{system.name}.#{azk.default_domain}' ],
     },
     export_envs        : {
-      MONGODB_URL: "mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development",
-      // LCB_DATABASE_URI: "mongodb://mongo/letschat",
-      LCB_DATABASE_URI: "mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development",
+      MONGODB_URL: 'mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development',
+      // LCB_DATABASE_URI: 'mongodb://mongo/letschat',
+      LCB_DATABASE_URI: 'mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development',
     },
   },
 
   deploy: {
-    image: {"docker": "azukiapp/deploy-digitalocean"},
+    image: { docker: 'azukiapp/deploy-digitalocean' },
     mounts: {
 
       // your files on remote machine
       // will be on /home/git folder
-      "/azk/deploy/src":  path("."),
+      '/azk/deploy/src': path('.'),
 
       // will use your public key on server
       // that way you can connect with:
       // $ ssh git@REMOTE.IP
       // $ bash
-      "/azk/deploy/.ssh": path("#{env.HOME}/.ssh")
+      '/azk/deploy/.ssh': path('#{env.HOME}/.ssh')
     },
 
     // this is not a server
     // just call with azk shell deploy
-    scalable: {"default": 0, "limit": 0},
+    scalable: { default: 0, limit: 0 },
 
     envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'azkfile',
+      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
       AZK_RESTART_COMMAND: 'azk restart -Rvv',
       RUN_SETUP: 'true',
       RUN_CONFIGURE: 'true',
       RUN_DEPLOY: 'true',
     }
   },
-  "fast-deploy": {
+  'fast-deploy': {
     extends: 'deploy',
     envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'azkfile',
+      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
       AZK_RESTART_COMMAND: 'azk restart -Rvv',
       RUN_SETUP: 'false',
       RUN_CONFIGURE: 'false',
@@ -154,4 +149,3 @@ systems({
   },
 
 });
-
