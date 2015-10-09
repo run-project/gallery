@@ -46,11 +46,11 @@ module.exports = {
 
 
     // :: beta
-    // { name:   'lobsters',        repoOwner: 'saitodisse',    branch: 'master' },
     // { name:   'isomorphic500',   repoOwner: 'saitodisse',    branch: 'azkfile' },
     // { name:   'jekyll',          repoOwner: 'saitodisse',    branch: 'azkfile'  },
 
     // :: alphas
+    // { name:   'lobsters',        repoOwner: 'saitodisse',    branch: 'master' },
     // { name:   'task-cerebral',   repoOwner: 'saitodisse',    branch: 'azkfile'  },
     // { name:   'feedbin',         repoOwner: 'saitodisse',    branch: 'azkfile' },
     // { name:   'platform',        repoOwner: 'saitodisse',    branch: 'azkfile' },
