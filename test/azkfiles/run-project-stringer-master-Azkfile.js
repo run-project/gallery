@@ -3,26 +3,18 @@
 /* eslint comma-dangle: [0, {properties: "never"}] */
 systems({
   stringer: {
-    // Dependent systems
     depends: ['postgres'],
-    // More images:  http://images.azk.io
     image: { docker: 'azukiapp/ruby:2.0' },
-    // Steps to execute before running instances
     provision: [
       'bundle install --path /azk/bundler',
       'bundle exec rake db:migrate RACK_ENV=production',
     ],
     workdir: '/azk/#{manifest.dir}',
     shell: '/bin/bash',
-
-    // command: 'bundle exec rackup config.ru --pid /tmp/ruby.pid --port $HTTP_PORT --host 0.0.0.0',
     command: [
-      // fetch now!
       'bundle exec rake fetch_feeds',
-      // start server
       'bundle exec unicorn -p $HTTP_PORT -c ./config/unicorn.rb',
     ].join(';'),
-
     wait: 20,
     mounts: {
       '/azk/#{manifest.dir}': sync('.'),
@@ -40,13 +32,9 @@ systems({
       ]
     },
     ports: {
-      // exports global variables
       http: '3000/tcp',
     },
     envs: {
-      // Make sure that the PORT value is the same as the one
-      // in ports/http below, and that it's also the same
-      // if you're setting it in a .env file
       RUBY_ENV: 'production',
       BUNDLE_APP_CONFIG: '/azk/bundler',
       APP_URL: '#{system.name}.#{azk.default_domain}',
@@ -54,10 +42,9 @@ systems({
       SECRET_TOKEN: 'd108461ed31016b360479e074a4ae4fefff1d8eb',
     },
   },
+
   postgres: {
-    // Dependent systems
     depends: [],
-    // More images:  http://images.azk.io
     image: { docker: 'azukiapp/postgres:9.3' },
     shell: '/bin/bash',
     wait: 20,
@@ -66,11 +53,9 @@ systems({
       '/var/log/postgresql': path('./log/postgresql'),
     },
     ports: {
-      // exports global variables
       data: '5432/tcp',
     },
     envs: {
-      // set instances variables
       POSTGRESQL_USER: 'stringer',
       POSTGRESQL_PASS: 'EDIT_ME',
       POSTGRESQL_DB: 'stringer_live',

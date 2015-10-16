@@ -17,12 +17,12 @@ systems({
     mounts: {
       '/azk/#{system.name}': sync('.'),
 
-      // node
+      // node mounts
       '/azk/#{system.name}/node_modules': persistent('./node_modules'),
       '/azk/#{system.name}/.sass-cache': persistent('./.sass-cache'),
       '/azk/#{system.name}/build': persistent('./build'),
 
-      // ruby
+      // ruby mounts
       '/azk/bundler': persistent('#{system.name}/bundler'),
       '/azk/#{system.name}/tmp': persistent('#{system.name}/tmp'),
       '/azk/#{system.name}/log': path('#{system.name}/log'),

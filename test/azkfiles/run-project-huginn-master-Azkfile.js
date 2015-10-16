@@ -2,9 +2,8 @@
 /* eslint camelcase: [2, {properties: "never"}] */
 /* eslint comma-dangle: [0, {properties: "never"}] */
 systems({
-  //////////
-  /// production version
-  //////////
+
+  // production version
   'huginn': {
     depends: ['mysql'],
     image: { docker: 'azukiapp/ruby:2.1' },
@@ -93,9 +92,7 @@ systems({
     },
   },
 
-  //////////
-  /// development version
-  //////////
+  // development version
   'huginn-dev': {
     extends: 'huginn',
     depends: ['mysql'],
@@ -127,10 +124,7 @@ systems({
     command: 'bundle exec rails runner bin/threaded.rb',
   },
 
-
-  //////////
-  /// deploy systems
-  //////////
+  // deploy systems
   deploy: {
     image: { docker: 'azukiapp/deploy-digitalocean' },
     mounts: {

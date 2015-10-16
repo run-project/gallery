@@ -32,16 +32,12 @@ systems({
     envs: {
       DOMAIN: '#{system.name}.#{azk.default_domain}',
       HOST: '0.0.0.0',
-      PORT: '5000',
 
       // Port for running the application, default is 5000
       PORT: '5000',
 
       // Url for the mongoDB database
-      // already get from mongo dependency
       // MONGODB_URL: '',
-
-      // (Optional) Url for a redis database when using worker mode
       // already get from redis dependency
       // REDIS_URL: '',
 
@@ -90,22 +86,18 @@ systems({
     image : { docker: 'azukiapp/mongodb' },
     scalable: false,
     wait: 80,
-    // Mounts folders to assigned paths
     mounts: {
-      // equivalent persistent_folders
       '/data/db': persistent('mongodb-#{manifest.dir}'),
     },
     ports: {
       http: '28017/tcp',
       data: '27017:27017/tcp',
     },
-    http      : {
-      // mongodb.azk.dev
+    http: {
       domains: [ '#{manifest.dir}-#{system.name}.#{azk.default_domain}' ],
     },
     export_envs        : {
       MONGODB_URL: 'mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development',
-      // LCB_DATABASE_URI: 'mongodb://mongo/letschat',
       LCB_DATABASE_URI: 'mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development',
     },
   },

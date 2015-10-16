@@ -18,7 +18,7 @@ cd updating
 export BUTTONS_FOLDER=~/_git/button-projects
 ```
 
-#### 2. Clone all projects and set their original `upstream` branch
+#### 2. (only first-time) Clone all projects and set their original `upstream` branch
 
 ```sh
 ./clone-all-set-upstreams.sh

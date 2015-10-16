@@ -4,20 +4,21 @@
 systems({
   dillinger: {
     depends: [],
-    image: { docker: 'node:latest' },
+    image: { docker: 'azukiapp/node:4' },
     provision: [
       'npm install',
-      // FIXME: https://github.com/SE7ENSKY/group-css-media-queries/pull/8
-      // 'wget https://raw.githubusercontent.com/saitodisse/group-css-media-queries/71fe8b181650b20790aca325988ac0fb9d9fe4a4/index.js -O ./node_modules/gulp-group-css-media-queries/node_modules/group-css-media-queries/index.js',
-      // 'node_modules/.bin/gulp build --prod',
+      'npm install gulp',
+
+      // FIXME: remove this after gulp-group-css-media-queries
+      // is updated. https://github.com/SE7ENSKY/group-css-media-queries/pull/8
+      'wget https://raw.githubusercontent.com/saitodisse/group-css-media-queries/71fe8b181650b20790aca325988ac0fb9d9fe4a4/index.js -O ./node_modules/gulp-group-css-media-queries/node_modules/group-css-media-queries/index.js',
+      'wget https://raw.githubusercontent.com/saitodisse/group-css-media-queries/71fe8b181650b20790aca325988ac0fb9d9fe4a4/index.js -O ./node_modules/group-css-media-queries/index.js',
+
+      'node_modules/.bin/gulp build --prod',
     ],
     workdir: '/azk/#{manifest.dir}',
     shell: '/bin/bash',
-
-    // FIXME: https://github.com/joemccann/dillinger/issues/378
-    // command: 'NODE_ENV=production node app',
-    command: 'node_modules/.bin/gulp build & node app',
-
+    command: 'NODE_ENV=production node app',
     wait: 30,
     mounts: {
       '/azk/#{manifest.dir}': sync('.'),
@@ -36,9 +37,10 @@ systems({
       http: '8080/tcp'
     },
     envs: {
+      PATH: 'node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+      // NODE_ENV: 'production',
       HOST_NAME: '#{system.name}.#{azk.default_domain}',
       PORT: '8080',
-      PATH: 'node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     }
   },
 
