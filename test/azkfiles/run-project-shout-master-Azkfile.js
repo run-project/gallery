@@ -40,38 +40,19 @@ systems({
   deploy: {
     image: { docker: 'azukiapp/deploy-digitalocean' },
     mounts: {
-
-      // your files on remote machine
-      // will be on /home/git folder
-      '/azk/deploy/src':  path('.'),
-
-      // will use your public key on server
-      // that way you can connect with:
-      // $ ssh git@REMOTE.IP
-      // $ bash
-      '/azk/deploy/.ssh': path('#{env.HOME}/.ssh')
+      '/azk/deploy/src':     path('.'),
+      '/azk/deploy/.ssh':    path('#{env.HOME}/.ssh'), // Required to connect with the remote server
+      '/azk/deploy/.config': persistent('deploy-config')
     },
 
-    // this is not a server
-    // just call with azk shell deploy
+    // This is not a server. Just run it with `azk deploy`
     scalable: { default: 0, limit: 0 },
 
     envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
+      // List with all available deployment settings:
+      // https://github.com/azukiapp/docker-deploy-digitalocean/blob/master/README.md
+      GIT_REF: 'master',
       AZK_RESTART_COMMAND: 'azk restart -Rvv',
-      RUN_SETUP: 'true',
-      RUN_CONFIGURE: 'true',
-      RUN_DEPLOY: 'true',
-    }
-  },
-  'fast-deploy': {
-    extends: 'deploy',
-    envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
-      AZK_RESTART_COMMAND: 'azk restart -Rvv',
-      RUN_SETUP: 'false',
-      RUN_CONFIGURE: 'false',
-      RUN_DEPLOY: 'true',
     }
   },
 

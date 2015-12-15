@@ -8,12 +8,6 @@ systems({
     provision: [
       'npm install',
       'npm install gulp',
-
-      // FIXME: remove this after gulp-group-css-media-queries
-      // is updated. https://github.com/SE7ENSKY/group-css-media-queries/pull/8
-      'wget https://raw.githubusercontent.com/saitodisse/group-css-media-queries/71fe8b181650b20790aca325988ac0fb9d9fe4a4/index.js -O ./node_modules/gulp-group-css-media-queries/node_modules/group-css-media-queries/index.js',
-      'wget https://raw.githubusercontent.com/saitodisse/group-css-media-queries/71fe8b181650b20790aca325988ac0fb9d9fe4a4/index.js -O ./node_modules/group-css-media-queries/index.js',
-
       'node_modules/.bin/gulp build --prod',
     ],
     workdir: '/azk/#{manifest.dir}',
@@ -47,38 +41,19 @@ systems({
   deploy: {
     image: { docker: 'azukiapp/deploy-digitalocean' },
     mounts: {
-
-      // your files on remote machine
-      // will be on /home/git folder
-      '/azk/deploy/src':  path('.'),
-
-      // will use your public key on server
-      // that way you can connect with:
-      // $ ssh git@REMOTE.IP
-      // $ bash
-      '/azk/deploy/.ssh': path('#{env.HOME}/.ssh')
+      '/azk/deploy/src':     path('.'),
+      '/azk/deploy/.ssh':    path('#{env.HOME}/.ssh'), // Required to connect with the remote server
+      '/azk/deploy/.config': persistent('deploy-config')
     },
 
-    // this is not a server
-    // just call with azk shell deploy
+    // This is not a server. Just run it with `azk deploy`
     scalable: { default: 0, limit: 0 },
 
     envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
-      AZK_RESTART_COMMAND: 'azk restart dillinger -Rvv',
-      RUN_SETUP: 'true',
-      RUN_CONFIGURE: 'true',
-      RUN_DEPLOY: 'true',
-    }
-  },
-  'fast-deploy': {
-    extends: 'deploy',
-    envs: {
-      GIT_CHECKOUT_COMMIT_BRANCH_TAG: 'master',
-      AZK_RESTART_COMMAND: 'azk restart dillinger -Rvv',
-      RUN_SETUP: 'false',
-      RUN_CONFIGURE: 'false',
-      RUN_DEPLOY: 'true',
+      // List of available deployment settings:
+      // https://github.com/azukiapp/docker-deploy-digitalocean/blob/master/README.md
+      GIT_REF: 'master',
+      AZK_RESTART_COMMAND: 'azk restart -Rvv',
     }
   },
 
